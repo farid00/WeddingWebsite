@@ -9,8 +9,13 @@ import Navigation from './Navigation.jsx'
 import Home from './Home.jsx'
 import PostFormCntr from './forms/postFormCntr.jsx'
 import { submitPost } from '../redux/actions/post.jsx'
-import WeddingDetails from './WeddingDetails.jsx'
 import Registry from './Registry.jsx'
+import WeddingParty from './WeddingParty.jsx'
+import TravelStay from './TravelStay.jsx'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+import MainEvent from './MainEvent.jsx'
 // Our Pure and clean App component. In the browser, we'll wrap
 // this inside a BrowserRouter component and put it in the DOM,
 // otherwise on server render, we'll stick this in a StaticRouter
@@ -29,7 +34,9 @@ const App = () => (
 	<Navigation/>
   	<div>
     	<Route exact path="/" component={Home}/>
-    	<Route path="/details" component={WeddingDetails} />
+    	<Route path="/wedding-party" component={WeddingParty} />
+      <Route path="/main-event" component={MainEvent} />
+      <Route path="/travel-stay" component={TravelStay} />
       <Route path="/registry" component={Registry} />
   	</div>
 </div>
