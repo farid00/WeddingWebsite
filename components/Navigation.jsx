@@ -67,7 +67,7 @@ const StyledLink = styled(Link)`
     color: black;
     text-decoration: none;
   }
-  font-size: 26px;
+  font-size: 20px;
   font-family: Dancing Script, cursive;
   @media (max-width: 768px) {
     color: white;
@@ -158,6 +158,8 @@ export default class Navigation extends React.Component {
           <StyledLink  onClick={this.toggle} to="/main-event"> Main Event </StyledLink>
           <StyledLink  onClick={this.toggle} to="/travel-stay"> Travel and Stay </StyledLink>
           <StyledLink  onClick={this.toggle} to="/wedding-party"> Wedding Party </StyledLink>
+          <StyledLink  onClick={this.toggle} to="/registry"> Registry </StyledLink>
+          <StyledLink  onClick={this.toggle} to="/faqs"> FAQS </StyledLink>        
         </NavbarWrapper>
       </NavbarStyled>
     );

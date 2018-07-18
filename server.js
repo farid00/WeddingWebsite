@@ -49,7 +49,7 @@ app.engine('html', hogan)
 app.set('port', (process.env.PORT || 3000))
 app.set('views', path.join(__dirname + 'dist/views'))
 app.use('/public', express.static('/Users/matthewbrandman/wedding/dist'))*/
-export default function serverRenderer ({clientStats, ServerStats}) {
+export default function serverRenderer () {
   return (req, res, next) => {
     const context = {}
     const sheet = new ServerStyleSheet()
