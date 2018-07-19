@@ -4,7 +4,6 @@ import styled from 'styled-components';
 // a plain link, use Link.
 import { Route, NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { Jumbotron, Container } from 'reactstrap';
 import Navigation from './Navigation.jsx'
 import Home from './Home.jsx'
 import PostFormCntr from './forms/postFormCntr.jsx'
