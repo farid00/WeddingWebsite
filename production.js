@@ -8,4 +8,4 @@ const ServerRenderer = require(ServerRendererPath).default;
 
 app.use(ServerRenderer());
 
-app.listen(8081);
+app.set('port', process.env.PORT || 8081);;
