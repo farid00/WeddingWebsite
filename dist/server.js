@@ -113,8 +113,6 @@ var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "react-router-
 
 var _reactRedux = __webpack_require__(/*! react-redux */ "react-redux");
 
-var _reactstrap = __webpack_require__(/*! reactstrap */ "reactstrap");
-
 var _Navigation = __webpack_require__(/*! ./Navigation.jsx */ "./components/Navigation.jsx");
 
 var _Navigation2 = _interopRequireDefault(_Navigation);
@@ -158,12 +156,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // otherwise on server render, we'll stick this in a StaticRouter
 // component and renderToString it.
 
-// using NavLink for the activeClassName, otherwise, for 
-// a plain link, use Link.
 var FlexContainer = _styledComponents2.default.div.withConfig({
   displayName: 'App__FlexContainer',
   componentId: 'md2ypg-0'
 })(['width:100%;height:auto;display:flex;flex-flow:row wrap;justify-content:space-between;']);
+// using NavLink for the activeClassName, otherwise, for 
+// a plain link, use Link.
+
 
 var App = function App() {
   return _react2.default.createElement(
@@ -1239,7 +1238,7 @@ var _path2 = _interopRequireDefault(_path);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function renderFullPage(html, image, preloadedState, styleTags) {
-  return '\n    <!doctype html>\n    <html>\n      <head>\n          <title> Brandman Wedding </title>\n          ' + styleTags + '\n          <base href="/">\n          <meta name="viewport" content="width=device-width, initial-scale=1">\n                    <link rel="stylesheet" type="text/css" href="/public/css/style.css">\n          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">\n          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" \n          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" \n          crossorigin="anonymous">\n          <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Homemade+Apple|Pompiere|Shadows+Into+Light" rel="stylesheet">\n          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Roboto:400,500,900" \n          rel="stylesheet">\n          <link rel="stylesheet"\n          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">\n      </head>\n      <body style="background-size:cover; background-color:#F9F8F6">\n        <div id="root">' + html + '</div>\n        <script>\n          // WARNING: See the following for security issues around embedding JSON in HTML:\n          // http://redux.js.org/recipes/ServerRendering.html#security-considerations\n          window.__PRELOADED_STATE__ = ' + JSON.stringify(preloadedState).replace(/</g, '\\u003c') + '\n        </script>\n        <script src="/dist/client.js"></script>\n      </body>\n    </html>\n    ';
+  return '\n    <!doctype html>\n    <html>\n      <head>\n          <title> Brandman Wedding </title>\n          ' + styleTags + '\n          <base href="/">\n          <meta name="viewport" content="width=device-width, initial-scale=1">\n                    <link rel="stylesheet" type="text/css" href="/public/css/style.css">\n          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">\n          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" \n          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" \n          crossorigin="anonymous">\n          <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Homemade+Apple|Pompiere|Shadows+Into+Light" rel="stylesheet">\n          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Roboto:400,500,900" \n          rel="stylesheet">\n          <link rel="stylesheet"\n          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">\n      </head>\n      <body style="background-size:cover; background-color:#F9F8F6">\n        <div id="root">' + html + '</div>\n        <script>\n          // WARNING: See the following for security issues around embedding JSON in HTML:\n          // http://redux.js.org/recipes/ServerRendering.html#security-considerations\n          window.__PRELOADED_STATE__ = ' + JSON.stringify(preloadedState).replace(/</g, '\\u003c') + '\n        </script>\n        <script src="/public/client.js"></script>\n      </body>\n    </html>\n    ';
 }
 // Express
 /*const app = express()
@@ -1399,17 +1398,6 @@ module.exports = require("react-router");
 /***/ (function(module, exports) {
 
 module.exports = require("react-router-dom");
-
-/***/ }),
-
-/***/ "reactstrap":
-/*!*****************************!*\
-  !*** external "reactstrap" ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("reactstrap");
 
 /***/ }),
 

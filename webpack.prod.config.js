@@ -11,9 +11,9 @@ const client = {
   devtool: 'source-map',
   entry: './client.jsx',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'public'),
     filename: "client.js",
-    publicPath: '/dist/',
+    publicPath: '/public/',
   },
   plugins: [
       new webpack.DefinePlugin({
