@@ -149,6 +149,10 @@ var _MainEvent = __webpack_require__(/*! ./MainEvent.jsx */ "./components/MainEv
 
 var _MainEvent2 = _interopRequireDefault(_MainEvent);
 
+var _FAQ = __webpack_require__(/*! ./FAQ.jsx */ "./components/FAQ.jsx");
+
+var _FAQ2 = _interopRequireDefault(_FAQ);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Our Pure and clean App component. In the browser, we'll wrap
@@ -156,13 +160,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // otherwise on server render, we'll stick this in a StaticRouter
 // component and renderToString it.
 
-var FlexContainer = _styledComponents2.default.div.withConfig({
-  displayName: 'App__FlexContainer',
-  componentId: 'md2ypg-0'
-})(['width:100%;height:auto;display:flex;flex-flow:row wrap;justify-content:space-between;']);
 // using NavLink for the activeClassName, otherwise, for 
 // a plain link, use Link.
-
+var FlexContainer = _styledComponents2.default.div.withConfig({
+  displayName: 'App__FlexContainer',
+  componentId: 's11rgi1q-0'
+})(['width:100%;height:auto;display:flex;flex-flow:row wrap;justify-content:space-between;']);
 
 var App = function App() {
   return _react2.default.createElement(
@@ -176,7 +179,8 @@ var App = function App() {
       _react2.default.createElement(_reactRouterDom.Route, { path: '/wedding-party', component: _WeddingParty2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '/main-event', component: _MainEvent2.default }),
       _react2.default.createElement(_reactRouterDom.Route, { path: '/travel-stay', component: _TravelStay2.default }),
-      _react2.default.createElement(_reactRouterDom.Route, { path: '/registry', component: _Registry2.default })
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/registry', component: _Registry2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { path: '/faqs', component: _FAQ2.default })
     )
   );
 };
@@ -211,27 +215,27 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Wrapper = _styledComponents2.default.div.withConfig({
 	displayName: 'Bio__Wrapper',
-	componentId: 's1m91fc6-0'
+	componentId: 's19xhq9i-0'
 })(['display:flex;width:100%;flex-flow:column wrap;justify-content:flex-start;align-items:center;padding-top:20px;padding-bottom:20px;']);
 
 var Name = _styledComponents2.default.p.withConfig({
 	displayName: 'Bio__Name',
-	componentId: 's1m91fc6-1'
-})(['font-family:Dancing Script,cursive;font-size:36px;']);
+	componentId: 's19xhq9i-1'
+})(['font-family:\'Pompiere\',cursive;font-size:36px;']);
 
 var Nickname = _styledComponents2.default.p.withConfig({
 	displayName: 'Bio__Nickname',
-	componentId: 's1m91fc6-2'
-})(['font-family:Dancing Script,cursive;font-size:20px;']);
+	componentId: 's19xhq9i-2'
+})(['font-family:\'Pompiere\',cursive;font-size:20px;']);
 
 var Information = _styledComponents2.default.p.withConfig({
 	displayName: 'Bio__Information',
-	componentId: 's1m91fc6-3'
-})(['margin:auto;max-width:350px;text-align:center;']);
+	componentId: 's19xhq9i-3'
+})(['margin:auto;max-width:350px;width:350px;text-align:center;']);
 
 var CircleAvatar = _styledComponents2.default.img.withConfig({
 	displayName: 'Bio__CircleAvatar',
-	componentId: 's1m91fc6-4'
+	componentId: 's19xhq9i-4'
 })(['border-radius:50%;']);
 
 var Bio = function Bio(_ref) {
@@ -270,6 +274,158 @@ exports.default = Bio;
 
 /***/ }),
 
+/***/ "./components/FAQ.jsx":
+/*!****************************!*\
+  !*** ./components/FAQ.jsx ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(/*! react */ "react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = __webpack_require__(/*! styled-components */ "styled-components");
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _FAQItem = __webpack_require__(/*! ./FAQItem.jsx */ "./components/FAQItem.jsx");
+
+var _FAQItem2 = _interopRequireDefault(_FAQItem);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Wrapper = _styledComponents2.default.div.withConfig({
+	displayName: 'FAQ__Wrapper',
+	componentId: 's1fhbcg8-0'
+})(['font-family:\'Pompiere\',cursive;display:flex;width:100%;flex-flow:column wrap;justify-content:center;align-items:center;']);
+
+var HiddenTitle = _styledComponents2.default.h1.withConfig({
+	displayName: 'FAQ__HiddenTitle',
+	componentId: 's1fhbcg8-1'
+})(['font-family:\'Pompiere\',cursive;font-size:36px;margin-bottom:10px;padding-top:10px;margin-left:5px;@media (min-width:768px){display:None;}']);
+
+var FAQ = function FAQ() {
+	return _react2.default.createElement(
+		Wrapper,
+		null,
+		_react2.default.createElement(
+			HiddenTitle,
+			null,
+			' FAQ '
+		),
+		_react2.default.createElement(_FAQItem2.default, { question: 'Are kids invited?', answer: 'We love all of the kids in our lives!   But due to limited space and a GIANT family,  if your invitation did not specifically say family or your child\'s name,  we\'d prefer you leave them home for the festivities.' }),
+		_react2.default.createElement(_FAQItem2.default, { question: 'Can I bring a date?', answer: 'I wish we could say the more the merrier!,  but due to limited space and a GIANT family we will not be including plus 1\'s for everyone to this wedding.   If your invitation specifies a plus 1 please feel free to bring your date' }),
+		_react2.default.createElement(_FAQItem2.default, { question: 'I have a food allergy, can I make a special request', answer: 'If you do have a food allergy,  please reach out to Matthew as soon as possible to let  him know so he can work with the Ashford Estate to try to accommodate your request.' })
+	);
+};
+
+exports.default = FAQ;
+
+/***/ }),
+
+/***/ "./components/FAQItem.jsx":
+/*!********************************!*\
+  !*** ./components/FAQItem.jsx ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(/*! react */ "react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _styledComponents = __webpack_require__(/*! styled-components */ "styled-components");
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Wrapper = _styledComponents2.default.div.withConfig({
+	displayName: 'FAQItem__Wrapper',
+	componentId: 's1jstwkp-0'
+})(['font-family:\'Pompiere\',cursive;display:flex;width:100%;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;margin-top:25px;margin-bottom:80px;width:350;@media (max-width:900px){margin-bottom:20px;&:not(:first-child){margin-top:0px;}&:not(:last-child){border-bottom:1px solid black;padding-bottom:40px;}}']);
+
+var QuestionWrapper = _styledComponents2.default.div.withConfig({
+	displayName: 'FAQItem__QuestionWrapper',
+	componentId: 's1jstwkp-1'
+})(['flex:1;font-size:30px;flex-flow:column wrap;justify-content:center;align-items:center;text-align:center;align-self:center;']);
+
+var AnswerWrapper = _styledComponents2.default.div.withConfig({
+	displayName: 'FAQItem__AnswerWrapper',
+	componentId: 's1jstwkp-2'
+})(['flex:1;font-size:30px;flex-flow:column wrap;justify-content:center;align-items:center;text-align:center;border-left:1px solid black;']);
+
+var Title = _styledComponents2.default.h1.withConfig({
+	displayName: 'FAQItem__Title',
+	componentId: 's1jstwkp-3'
+})(['font-family:\'Pompiere\',cursive;font-size:36px;']);
+
+var QInformation = _styledComponents2.default.p.withConfig({
+	displayName: 'FAQItem__QInformation',
+	componentId: 's1jstwkp-4'
+})(['width:450px;font-size:30px;text-align:center;margin:auto;']);
+
+var AInformation = _styledComponents2.default.p.withConfig({
+	displayName: 'FAQItem__AInformation',
+	componentId: 's1jstwkp-5'
+})(['width:450px;font-size:20px;text-align:center;margin:auto;']);
+
+var FAQItem = function FAQItem(_ref) {
+	var question = _ref.question,
+	    answer = _ref.answer;
+	return _react2.default.createElement(
+		Wrapper,
+		null,
+		_react2.default.createElement(
+			QuestionWrapper,
+			null,
+			_react2.default.createElement(
+				Title,
+				null,
+				' Question '
+			),
+			_react2.default.createElement(
+				QInformation,
+				null,
+				question
+			)
+		),
+		_react2.default.createElement(
+			AnswerWrapper,
+			null,
+			_react2.default.createElement(
+				Title,
+				null,
+				' Answer '
+			),
+			_react2.default.createElement(
+				AInformation,
+				null,
+				answer
+			)
+		)
+	);
+};
+
+exports.default = FAQItem;
+
+/***/ }),
+
 /***/ "./components/Home.jsx":
 /*!*****************************!*\
   !*** ./components/Home.jsx ***!
@@ -296,67 +452,67 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Wrapper = _styledComponents2.default.div.withConfig({
 	displayName: 'Home__Wrapper',
-	componentId: 's51dnrr-0'
+	componentId: 's1ofh9nm-0'
 })(['display:flex;flex-flow:column;justify-content:center;align-items:center width:100%;']);
 
 var Title = _styledComponents2.default.p.withConfig({
 	displayName: 'Home__Title',
-	componentId: 's51dnrr-1'
+	componentId: 's1ofh9nm-1'
 })(['font-family:Dancing Script,cursive;font-size:36px;']);
 
 var HomePicture = _styledComponents2.default.img.withConfig({
 	displayName: 'Home__HomePicture',
-	componentId: 's51dnrr-2'
+	componentId: 's1ofh9nm-2'
 })(['width:100%;@media (min-width:768px){height:auto;}@media (max-width:768px){height:auto;}']);
 
 var OurNames = _styledComponents2.default.div.withConfig({
 	displayName: 'Home__OurNames',
-	componentId: 's51dnrr-3'
+	componentId: 's1ofh9nm-3'
 })(['margin-top:25px;display:flex;flex-flow:column;justify-content:center;align-items:center;font-size:46px;font-family:\'Pompiere\',cursive;']);
 
 var AnnounceWrapper = _styledComponents2.default.div.withConfig({
 	displayName: 'Home__AnnounceWrapper',
-	componentId: 's51dnrr-4'
+	componentId: 's1ofh9nm-4'
 })(['display:flex;flex-flow:column;justify-content:center;align-items:center;border-top:1px solid black;border-bottom:1px solid black;font-family:\'Pompiere\',cursive;@media (min-width:768px){margin-left:200px;margin-right:200px;}']);
 
 var HashTag = _styledComponents2.default.p.withConfig({
 	displayName: 'Home__HashTag',
-	componentId: 's51dnrr-5'
+	componentId: 's1ofh9nm-5'
 })(['margin-top:25px;font-size:20px;']);
 
 var DateTag = _styledComponents2.default.p.withConfig({
 	displayName: 'Home__DateTag',
-	componentId: 's51dnrr-6'
+	componentId: 's1ofh9nm-6'
 })(['font-size:36px;']);
 
 var AshfordTag = _styledComponents2.default.p.withConfig({
 	displayName: 'Home__AshfordTag',
-	componentId: 's51dnrr-7'
+	componentId: 's1ofh9nm-7'
 })(['font-size:20px;']);
 
 var StyledSection = _styledComponents2.default.div.withConfig({
 	displayName: 'Home__StyledSection',
-	componentId: 's51dnrr-8'
+	componentId: 's1ofh9nm-8'
 })(['margin-top:25px;display:flex;flex-flow:column;justify-content:center;align-items:center;font-size:46px;font-family:\'Pompiere\',cursive;']);
 
 var SectionTitle = _styledComponents2.default.p.withConfig({
 	displayName: 'Home__SectionTitle',
-	componentId: 's51dnrr-9'
+	componentId: 's1ofh9nm-9'
 })(['font-size:36px;']);
 
 var SectionContent = _styledComponents2.default.p.withConfig({
 	displayName: 'Home__SectionContent',
-	componentId: 's51dnrr-10'
+	componentId: 's1ofh9nm-10'
 })(['font-size:20px;']);
 
 var IcecreamImage = _styledComponents2.default.img.withConfig({
 	displayName: 'Home__IcecreamImage',
-	componentId: 's51dnrr-11'
+	componentId: 's1ofh9nm-11'
 })(['position:absolute;right:60px;']);
 
 var MZ = _styledComponents2.default.img.withConfig({
 	displayName: 'Home__MZ',
-	componentId: 's51dnrr-12'
+	componentId: 's1ofh9nm-12'
 })(['position:absolute;left:60px;width:200px;height:auto;']);
 var Home = function Home() {
 	return _react2.default.createElement(
@@ -472,21 +628,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Wrapper = _styledComponents2.default.div.withConfig({
 	displayName: 'MainEvent__Wrapper',
-	componentId: 's1asqmkc-0'
+	componentId: 's17u0hou-0'
 })(['display:flex;width:100%;flex-flow:column;justify-content:center;align-items:center;font-family:\'Pompiere\',cursive;font-size:26px']);
 var ST = _styledComponents2.default.p.withConfig({
 	displayName: 'MainEvent__ST',
-	componentId: 's1asqmkc-1'
+	componentId: 's17u0hou-1'
 })(['font-size:36px;text-align:center;max-width:450px;margin:auto;font-weight:bold;']);
 
 var SP = _styledComponents2.default.p.withConfig({
 	displayName: 'MainEvent__SP',
-	componentId: 's1asqmkc-2'
+	componentId: 's17u0hou-2'
 })(['text-align:center;max-width:450px;margin:auto;']);
 
 var SectionWrapper = _styledComponents2.default.div.withConfig({
 	displayName: 'MainEvent__SectionWrapper',
-	componentId: 's1asqmkc-3'
+	componentId: 's17u0hou-3'
 })(['']);
 
 var MainEvent = function MainEvent() {
@@ -568,37 +724,37 @@ var slideAnimation = (0, _styledComponents.keyframes)(['', ''], _reactAnimations
 
 var NavbarStyled = _styledComponents2.default.div.withConfig({
   displayName: 'Navigation__NavbarStyled',
-  componentId: 's0o3k9-0'
+  componentId: 'xyic54-0'
 })(['display:flex;position:sticky;top:0;width:100%;flex-flow:column;justify-content:space-around;align-items:center;border-bottom:1px solid black;background-color:#F9F8F6;']);
 
 var NavbarWrapper = _styledComponents2.default.div.withConfig({
   displayName: 'Navigation__NavbarWrapper',
-  componentId: 's0o3k9-1'
+  componentId: 'xyic54-1'
 })(['@media (min-width:768px){display:flex;width:100%;justify-content:space-around;}@media (max-width:768px){display:none;flex-flow:column;justify-content:space-around;align-items:center;position:fixed;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.7);z-index:2;cursor:pointer;overflow-x:hidden;overflow-y:hidden;}']);
 
 var Title = _styledComponents2.default.h1.withConfig({
   displayName: 'Navigation__Title',
-  componentId: 's0o3k9-2'
-})(['font-family:Dancing Script,cursive;font-size:36px;margin-bottom:25px;@media (max-width:768px){display:None;}']);
+  componentId: 'xyic54-2'
+})(['font-family:\'Pompiere\',cursive;font-size:36px;margin-top:15px;margin-bottom:15px;@media (max-width:768px){display:None;}']);
 
 var HiddenTitle = _styledComponents2.default.h1.withConfig({
   displayName: 'Navigation__HiddenTitle',
-  componentId: 's0o3k9-3'
-})(['font-family:Dancing Script,cursive;font-size:36px;margin-bottom:10px;padding-top:10px;margin-left:5px;']);
+  componentId: 'xyic54-3'
+})(['font-family:\'Pompiere\',cursive;font-size:36px;margin-bottom:10px;padding-top:10px;margin-left:5px;']);
 
 var StyledLink = (0, _styledComponents2.default)(_reactRouterDom.Link).withConfig({
   displayName: 'Navigation__StyledLink',
-  componentId: 's0o3k9-4'
-})(['color:black;&:hover{color:black;text-decoration:none;}font-size:20px;font-family:Dancing Script,cursive;@media (max-width:768px){color:white;}']);
+  componentId: 'xyic54-4'
+})(['color:black;&:hover{color:black;text-decoration:none;}font-size:20px;font-family:\'Pompiere\',cursive;@media (max-width:768px){color:white;}']);
 
 var HiddenWrapper = _styledComponents2.default.div.withConfig({
   displayName: 'Navigation__HiddenWrapper',
-  componentId: 's0o3k9-5'
-})(['display:flex;width:100%;align-items:center;font-family:Dancing Script,cursive;@media (min-width:768px){display:None;}']);
+  componentId: 'xyic54-5'
+})(['display:flex;width:100%;align-items:center;font-family:\'Pompiere\',cursive;@media (min-width:768px){display:None;}']);
 
 var MenuToggle = _styledComponents2.default.button.withConfig({
   displayName: 'Navigation__MenuToggle',
-  componentId: 's0o3k9-6'
+  componentId: 'xyic54-6'
 })(['display:flex;margin-left:auto;margin-right:10px;border-radius:4px;cursor:pointer;touch-action:manipulation;']);
 
 var Navigation = function (_React$Component) {
@@ -761,13 +917,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Wrapper = _styledComponents2.default.div.withConfig({
 	displayName: 'Registry__Wrapper',
-	componentId: 'hu3udi-0'
+	componentId: 'llkzbm-0'
 })(['display:flex;justify-content:center;width:100%;']);
 
 var Title = _styledComponents2.default.h1.withConfig({
 	displayName: 'Registry__Title',
-	componentId: 'hu3udi-1'
-})(['font-family:Dancing Script,cursive;font-size:36px;']);
+	componentId: 'llkzbm-1'
+})(['font-family:\'Pompiere\',cursive;font-size:36px;']);
 
 var Registry = function Registry() {
 	return _react2.default.createElement(
@@ -815,17 +971,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Wrapper = _styledComponents2.default.div.withConfig({
 	displayName: 'TravelStay__Wrapper',
-	componentId: 's8mevaj-0'
+	componentId: 's1ag73o0-0'
 })(['display:flex;width:100%;flex-flow:column wrap;justify-content:center;align-items:center']);
 
 var Title = _styledComponents2.default.h1.withConfig({
 	displayName: 'TravelStay__Title',
-	componentId: 's8mevaj-1'
-})(['font-family:Dancing Script,cursive;font-size:36px;margin-bottom:25px;']);
+	componentId: 's1ag73o0-1'
+})(['font-family:\'Pompiere\',cursive;font-size:36px;margin-bottom:25px;']);
 
 var SubTitle = _styledComponents2.default.p.withConfig({
 	displayName: 'TravelStay__SubTitle',
-	componentId: 's8mevaj-2'
+	componentId: 's1ag73o0-2'
 })(['font-size:20px;']);
 
 var TravelStay = function TravelStay() {
@@ -880,30 +1036,35 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Wrapper = _styledComponents2.default.div.withConfig({
 	displayName: 'WeddingParty__Wrapper',
-	componentId: 'mds02r-0'
+	componentId: 's39ct1k-0'
 })(['display:flex;width:100%;flex-flow:column wrap;justify-content:center;align-items:center']);
 
 var Title = _styledComponents2.default.h1.withConfig({
 	displayName: 'WeddingParty__Title',
-	componentId: 'mds02r-1'
-})(['font-family:Dancing Script,cursive;font-size:36px;margin-bottom:25px;']);
+	componentId: 's39ct1k-1'
+})(['font-family:\'Pompiere\',cursive;font-size:36px;margin-bottom:25px;']);
 
 var BioColumn = _styledComponents2.default.div.withConfig({
 	displayName: 'WeddingParty__BioColumn',
-	componentId: 'mds02r-2'
-})(['display:flex;flex-grow:1;flex-flow:column wrap;justify-content:flex-start;align-items:center;border-right:solid 1px black;']);
+	componentId: 's39ct1k-2'
+})(['display:flex;flex:1 0 0;flex-flow:column wrap;justify-content:flex-start;align-items:center;border-right:solid 1px black;']);
 
 var BioWrapper = _styledComponents2.default.div.withConfig({
 	displayName: 'WeddingParty__BioWrapper',
-	componentId: 'mds02r-3'
+	componentId: 's39ct1k-3'
 })(['display:flex;width:100%;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;']);
+
+var HiddenTitle = _styledComponents2.default.h1.withConfig({
+	displayName: 'WeddingParty__HiddenTitle',
+	componentId: 's39ct1k-4'
+})(['font-family:\'Pompiere\',cursive;font-size:36px;margin-bottom:10px;padding-top:10px;margin-left:5px;@media (min-width:768px){display:None;}']);
 
 var WeddingParty = function WeddingParty() {
 	return _react2.default.createElement(
 		Wrapper,
 		null,
 		_react2.default.createElement(
-			Title,
+			HiddenTitle,
 			null,
 			' The Wedding Party '
 		),

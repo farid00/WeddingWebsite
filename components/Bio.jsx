@@ -13,18 +13,19 @@ const Wrapper = styled.div`
 `;
 
 const Name = styled.p`
-	font-family: Dancing Script, cursive;
+	font-family: 'Pompiere', cursive;
 	font-size: 36px;
 `;
 
 const Nickname = styled.p`
-	font-family: Dancing Script, cursive;
+	font-family: 'Pompiere', cursive;
 	font-size: 20px;
 `;
 
 const Information = styled.p`
 	margin: auto;
 	max-width: 350px;
+	width: 350px;
 	text-align: center;
 `;
 

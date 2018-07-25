@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-	font-family: Dancing Script, cursive;
+	font-family: 'Pompiere', cursive;
 	font-size: 36px;
 	margin-bottom: 25px;
 `;

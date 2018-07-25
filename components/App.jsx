@@ -15,6 +15,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
 import MainEvent from './MainEvent.jsx'
+import FAQ from './FAQ.jsx'
 // Our Pure and clean App component. In the browser, we'll wrap
 // this inside a BrowserRouter component and put it in the DOM,
 // otherwise on server render, we'll stick this in a StaticRouter
@@ -37,6 +38,7 @@ const App = () => (
       <Route path="/main-event" component={MainEvent} />
       <Route path="/travel-stay" component={TravelStay} />
       <Route path="/registry" component={Registry} />
+      <Route path="/faqs" component={FAQ} />
   	</div>
 </div>
 )

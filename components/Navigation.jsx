@@ -45,16 +45,17 @@ const NavbarWrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: Dancing Script, cursive;
+  font-family: 'Pompiere', cursive;
   font-size: 36px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   @media (max-width: 768px) {
     display: None;
   }
 `;
 
 const HiddenTitle = styled.h1`
-  font-family: Dancing Script, cursive;
+  font-family: 'Pompiere', cursive;
   font-size: 36px;
   margin-bottom: 10px;
   padding-top: 10px;
@@ -68,7 +69,7 @@ const StyledLink = styled(Link)`
     text-decoration: none;
   }
   font-size: 20px;
-  font-family: Dancing Script, cursive;
+  font-family: 'Pompiere', cursive;
   @media (max-width: 768px) {
     color: white;
   }
@@ -78,7 +79,7 @@ const HiddenWrapper = styled.div`
   display: flex;
   width: 100%;
   align-items: center;
-  font-family: Dancing Script, cursive;
+  font-family: 'Pompiere', cursive;
   @media (min-width: 768px) {
     display: None;
   }

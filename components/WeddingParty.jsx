@@ -11,14 +11,14 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-	font-family: Dancing Script, cursive;
+	font-family: 'Pompiere', cursive;
 	font-size: 36px;
 	margin-bottom: 25px;
 `;
 
 const BioColumn = styled.div`
 	display: flex;
-	flex-grow: 1;
+	flex: 1 0 0;
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	align-items: center;
@@ -34,9 +34,20 @@ const BioWrapper = styled.div`
 
 `;
 
+const HiddenTitle = styled.h1`
+  font-family: 'Pompiere', cursive;
+  font-size: 36px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 5px;
+  @media (min-width: 768px) {
+    display: None;
+  }
+`;
+
 const WeddingParty = () => (
 	<Wrapper>
-		<Title> The Wedding Party </Title>
+		<HiddenTitle> The Wedding Party </HiddenTitle>
 		<BioWrapper>
 			<BioColumn>
 				<Title> Groomsmen </Title>
