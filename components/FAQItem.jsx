@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 	margin-top: 25px;
 	margin-bottom: 80px;
 	width: 350;
-	@media (max-width: 900px) {
+	@media (max-width: 768px) {
 		margin-bottom: 20px;
 		&:not(:first-child) {
 			margin-top: 0px;
@@ -24,23 +24,28 @@ const Wrapper = styled.div`
 `;
 
 const QuestionWrapper = styled.div`
-	flex: 1;
+	flex: 1 0 50%;
 	font-size: 30px;
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	align-self: center;
+
 `;
 
 const AnswerWrapper = styled.div`
-	flex: 1;
+	flex: 1 0 50%;
 	font-size: 30px;
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	border-left: 1px solid black;
+	@media (max-width: 768px) {
+		border-left: 0px
+		
+	}
 `;
 
 
@@ -50,14 +55,14 @@ const Title = styled.h1`
 `;
 
 const QInformation = styled.p`
-	width: 450px;
+	width: 350px;
 	font-size: 30px;
 	text-align: center;
 	margin: auto;
 `;
 
 const AInformation = styled.p`
-	width: 450px;
+	width: 350px;
 	font-size: 20px;
 	text-align: center;
 	margin: auto;

@@ -36,7 +36,7 @@ const NavbarWrapper = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+    background-color: rgba(0,0,0,0.9); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
     overflow-x: hidden;
@@ -98,54 +98,48 @@ export default class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
+    this.navRef = React.createRef()
     this.state = {
       isOpen: false,
-      navState: 'navClosed',
-      width: 0,
-      height: 0
+      navState: '',
     };
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
-  componentDidMount() {
-    this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
+  componentDidMount () {
+    this.navRef.current.addEventListener('animationend', (e) => console.log(e))
+  }
+  componentWillUnmount () {
+    this.navRef.current.removeEventListener('animationend', (e) => console.log(e))
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
+  closeMenu() {
+    this.setState({
+      navState: 'navOpen animated slideOutUp',
+      isOpen: false
+    })
   }
-
-  updateWindowDimensions() {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
-    if (window.innerWidth > 768) {
-      this.setState({
-        navState: '',
-        isOpen: false
-      })
-    }
-  }
-
 
   toggle() {
     var currentState = this.state.isOpen
     var newState = !this.state.isOpen
-    if (this.state.width < 768) {
       this.setState({
-        isOpen: !this.state.isOpen
+        isOpen: true,
+        navState: 'navOpen slideInDown'
       });
-    }
-
-    if(newState == true && this.state.width < 768) {
+    
+    if(newState == true ) {
       this.setState({
         navState: 'navOpen animated slideInDown'
       });
-    }else if (this.state.width < 768){
+    }else {
       this.setState({
         navState: 'navOpen animated slideOutUp'
       });
     }
   }
+
+
   render() {
     return (
       <NavbarStyled>
@@ -154,13 +148,13 @@ export default class Navigation extends React.Component {
           <HiddenTitle> Matt and Juliette </HiddenTitle>
           <MenuToggle onClick={this.toggle}> <i  className="fas fa-bars fa-2x"></i> </MenuToggle>
         </HiddenWrapper>
-        <NavbarWrapper className={this.state.navState}>
-          <StyledLink  onClick={this.toggle} to="/"> Home </StyledLink>
-          <StyledLink  onClick={this.toggle} to="/main-event"> Main Event </StyledLink>
-          <StyledLink  onClick={this.toggle} to="/travel-stay"> Travel and Stay </StyledLink>
-          <StyledLink  onClick={this.toggle} to="/wedding-party"> Wedding Party </StyledLink>
-          <StyledLink  onClick={this.toggle} to="/registry"> Registry </StyledLink>
-          <StyledLink  onClick={this.toggle} to="/faqs"> FAQS </StyledLink>        
+        <NavbarWrapper onClick={this.closeMenu} innerRef={this.navRef} className={"animated " + this.state.navState}>
+          <StyledLink  onClick={this.closeMenu} to="/"> Home </StyledLink>
+          <StyledLink  onClick={this.closeMenu} to="/main-event"> Main Event </StyledLink>
+          <StyledLink  onClick={this.closeMenu} to="/travel-stay"> Travel and Stay </StyledLink>
+          <StyledLink  onClick={this.closeMenu} to="/wedding-party"> Wedding Party </StyledLink>
+          <StyledLink  onClick={this.closeMenu} to="/registry"> Registry </StyledLink>
+          <StyledLink  onClick={this.closeMenu} to="/faqs"> FAQS </StyledLink>        
         </NavbarWrapper>
       </NavbarStyled>
     );

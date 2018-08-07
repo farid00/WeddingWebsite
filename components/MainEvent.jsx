@@ -35,10 +35,10 @@ const MainEvent = () => (
 		<ST> Ceremony </ST>
 		<img src="public/images/wr.png"/>
 		<SP> The ceremony will be taking place in the carriage house at the Ashoford estate at 
-		XX:XXPM please try to arrive X early.</SP>
+		6:30PM please try to arrive 1 hour early.</SP>
 		<ST> Reception </ST>
 		<img src="public/images/champagne.png"/>
-		<SP> The reception will take place following the ceremony around XX:XXPM, there will be
+		<SP> The reception will take place following the ceremony around 7:30PM, there will be
 		champage toast followed by a cocktail hour, followed by 3 course entree in the grand ballroom.
 		</SP>
 	</Wrapper>

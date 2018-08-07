@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Bio from './Bio.jsx'
+import WeddingBios from './WeddingBios.js'
 
 const Wrapper = styled.div`
 	display: flex;
@@ -14,15 +15,20 @@ const Title = styled.h1`
 	font-family: 'Pompiere', cursive;
 	font-size: 36px;
 	margin-bottom: 25px;
+	margin-top: 25px;
 `;
 
 const BioColumn = styled.div`
 	display: flex;
-	flex: 1 0 0;
+	flex: 1 0 50%;
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	align-items: center;
 	border-right: solid 1px black;
+	@media (max-width: 768px) {
+		border-right: 0px;
+	}
+
 `;
 
 const BioWrapper = styled.div`
@@ -51,13 +57,15 @@ const WeddingParty = () => (
 		<BioWrapper>
 			<BioColumn>
 				<Title> Groomsmen </Title>
-				<Bio name="Greg Pfadenhaeur" nickname="Po" information="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec egestas eros. Donec porttitor nulla tellus, sit amet tempus tellus maximus a. Curabitur consequat ex eu magna tincidunt tincidunt. "/>
-				<Bio name="Ben Andre" nickname="NA" information="hello"/>
+				{WeddingBios.groomsmen.map((bio, i) =>
+					<Bio key={i} {...bio}/>
+				)}
 			</BioColumn>
 			<BioColumn>
 				<Title> Bridesmaids </Title>
-				<Bio name="Kaite Wirth" nickname="NA" information="NNANANAANANNA"/>
-				<Bio name="Amanda Waltman" nickname="NA" information="hello"/>
+				{WeddingBios.bridesmaids.map((bio, i) =>
+					<Bio key={i} {...bio}/>
+				)}
 			</BioColumn>
 		</BioWrapper>
 	</Wrapper>

@@ -20,7 +20,9 @@ function renderFullPage(html, image, preloadedState, styleTags) {
           ${styleTags}
           <base href="/">
           <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+          <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+          <link rel="stylesheet" type="text/css" href="/public/css/style.css">
           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
@@ -28,8 +30,7 @@ function renderFullPage(html, image, preloadedState, styleTags) {
           <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Homemade+Apple|Pompiere|Shadows+Into+Light" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Roboto:400,500,900" 
           rel="stylesheet">
-          <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+          
       </head>
       <body style="background-size:cover; background-color:#F9F8F6">
         <div id="root">${html}</div>
@@ -38,7 +39,7 @@ function renderFullPage(html, image, preloadedState, styleTags) {
           // http://redux.js.org/recipes/ServerRendering.html#security-considerations
           window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}
         </script>
-        <script src="/public/client.js"></script>
+        <script src="/dist/client.js"></script>
       </body>
     </html>
     `

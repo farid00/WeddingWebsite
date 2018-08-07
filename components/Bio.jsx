@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import PictureChange from './PictureChange.jsx'
 const Wrapper = styled.div`
 	display: flex;
 	width: 100%;
@@ -15,6 +15,7 @@ const Wrapper = styled.div`
 const Name = styled.p`
 	font-family: 'Pompiere', cursive;
 	font-size: 36px;
+	margin-bottom: 0em;
 `;
 
 const Nickname = styled.p`
@@ -29,15 +30,12 @@ const Information = styled.p`
 	text-align: center;
 `;
 
-const CircleAvatar = styled.img`
-	border-radius: 50%;
-`
 
-const Bio = ({name, nickname, information, picture}) => (
+const Bio = ({name, nickname, information, nPicture, fPicture}) => (
 	<Wrapper>
-		<CircleAvatar src={picture} alt="avatar"/>
 		<Name> {name} </Name>
-		<Nickname> {nickname} </Nickname>
+		<Nickname> { '"' + nickname + '"'} </Nickname>
+		<PictureChange nPicture={nPicture} fPicture={fPicture} />
 		<Information> {information}</Information>
 	</Wrapper>
 )

@@ -9,12 +9,14 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
 	font-family: 'Pompiere', cursive;
-	font-size: 36px;
+	font-size: 30px;
+	margin-top: 25px;
 `;
 
 const Registry = () => (
 	<Wrapper>
-		<Title>Registry Details</Title>
+		<Title>We are registered at Bloomingdales and Macy's (Click Image to View Registry)</Title>
+		
 	</Wrapper>
 )
 

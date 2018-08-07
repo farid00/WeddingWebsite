@@ -49,6 +49,16 @@ table {
 @media (max-width: 768px){
 	.navOpen {
 		display: flex !important;
+		height: 100% !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.slideInDown, .slideOutUp {
+		animation-name: none;
+	}
+	.slideOutUp{
+		animation-name: none;
 	}
 }
 
