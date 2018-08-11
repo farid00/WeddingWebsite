@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const CircleAvatar = styled.img`
-	width: 120px;
+	height: 170px;
 `
 
 class PictureChange extends React.Component {

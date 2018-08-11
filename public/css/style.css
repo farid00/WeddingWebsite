@@ -28,8 +28,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html {
+	height: 100%;
+}
 body {
 	line-height: 1;
+	height: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -62,3 +66,106 @@ table {
 	}
 }
 
+.parwrap {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform-style: preserve-3d;
+}
+
+
+.parsection {
+	position: relative;
+	height: 100vh;
+	transform-style: preserve-3d;
+	z-index: -1;
+}
+
+.parallax {
+  display: flex;
+  justify-content: center;
+  /* Display and position the pseudo-element */
+  transform: translateZ(-4px) scale(5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  /* Force the background image to fill the whole element. */
+  /* Keep the image from overlapping sibling elements. */ 
+  z-index: -2;
+  transform-style: preserve-3d;
+}
+
+.parallax2 {
+  /* Display and position the pseudo-element */
+  display: flex;
+  justify-content: center;
+  transform: scale(2) translateZ(-1px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  /* Force the background image to fill the whole element. */
+  /* Keep the image from overlapping sibling elements. */ 
+  z-index: -1;
+  transform-style: preserve-3d;
+}
+
+.parallax3 {
+  /* Display and position the pseudo-element */
+  display: flex;
+  justify-content: center;
+  transform: scale(2) translateZ(-1px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  /* Force the background image to fill the whole element. */
+  /* Keep the image from overlapping sibling elements. */ 
+  z-index: -1;
+  transform-style: preserve-3d;
+}
+
+
+.static {
+
+	height: 100vh;
+	background-color: coral;
+	z-index: 4;
+}
+.bg1 {
+	display: flex;
+	flex-flow: row nowrap;
+	z-index: -1; 
+}
+
+.bg2 {
+	z-index: -1;
+	margin-top: -110vh;
+}
+
+.static2 {
+	height: auto;
+	background-color: coral;
+	z-index: 4;
+
+}
+.static3 {
+	height: auto;
+	background-color: coral;
+	z-index: 4;
+
+}

@@ -8,6 +8,7 @@ const slideAnimation = keyframes`${slideInDown}`;
 const NavbarStyled = styled.div`
   display: flex;
   position: sticky;
+  z-index: 2;
   top: 0;
   width: 100%;
   flex-flow: column;

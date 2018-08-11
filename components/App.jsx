@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import AOS from 'aos'
 // using NavLink for the activeClassName, otherwise, for 
 // a plain link, use Link.
 import { Route, NavLink } from 'react-router-dom';
@@ -16,6 +17,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
 import MainEvent from './MainEvent.jsx'
 import FAQ from './FAQ.jsx'
+
 // Our Pure and clean App component. In the browser, we'll wrap
 // this inside a BrowserRouter component and put it in the DOM,
 // otherwise on server render, we'll stick this in a StaticRouter
@@ -29,18 +31,24 @@ const FlexContainer = styled.div`
   justify-content: space-between;
 `
 
-const App = () => (
-<div>
-	<Navigation/>
-  	<div>
-    	<Route exact path="/" component={Home}/>
-    	<Route path="/wedding-party" component={WeddingParty} />
-      <Route path="/main-event" component={MainEvent} />
-      <Route path="/travel-stay" component={TravelStay} />
-      <Route path="/registry" component={Registry} />
-      <Route path="/faqs" component={FAQ} />
-  	</div>
-</div>
-)
+export default class App extends React.Component {
+  constructor(props){
+    super(props);
+  }
 
-export default App
+  render() {
+    return (
+      <div >
+      	<Navigation/>
+        	<div>
+          	<Route exact path="/" component={Home}/>
+          	<Route path="/wedding-party" component={WeddingParty} />
+            <Route path="/main-event" component={MainEvent} />
+            <Route path="/travel-stay" component={TravelStay} />
+            <Route path="/registry" component={Registry} />
+            <Route path="/faqs" component={FAQ} />
+        	</div>
+      </div>
+    )
+  }
+}

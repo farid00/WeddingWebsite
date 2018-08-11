@@ -24,6 +24,8 @@ const Nickname = styled.p`
 `;
 
 const Information = styled.p`
+	font-family: 'Pompiere', cursive;
+	font-size: 26px;
 	margin: auto;
 	max-width: 350px;
 	width: 350px;
@@ -31,12 +33,11 @@ const Information = styled.p`
 `;
 
 
-const Bio = ({name, nickname, information, nPicture, fPicture}) => (
-	<Wrapper>
+const Bio = ({name, nickname, blurb, nPicture, fPicture, x}) => (
+	<Wrapper data-aos={x}>
 		<Name> {name} </Name>
-		<Nickname> { '"' + nickname + '"'} </Nickname>
 		<PictureChange nPicture={nPicture} fPicture={fPicture} />
-		<Information> {information}</Information>
+		<Information> {blurb}</Information>
 	</Wrapper>
 )
 
