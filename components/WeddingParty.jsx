@@ -60,6 +60,14 @@ export default class WeddingParty extends React.Component {
 	}
 	componentDidMount () {
 		AOS.init();
+		{WeddingBios.groomsmen.forEach((element) => {
+			var img = new Image()
+			img.src = element.fPicture
+		 })}
+		{WeddingBios.bridesmaids.forEach((element) => {
+			var img = new Image()
+			img.src = element.fPicture
+		 })}
   	}
   	componentDidUpdate() {
       	AOS.refresh();

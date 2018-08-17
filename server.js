@@ -16,12 +16,10 @@ function renderFullPage(html, image, preloadedState, styleTags) {
     <!doctype html>
     <html>
       <head>
+          <base href="/"><meta name="viewport" content="width=device-width">
           <title> Brandman Wedding </title>
           ${styleTags}
-          <base href="/">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
           <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
           <link rel="shortcut icon" href="/public/images/favicon.ico" />

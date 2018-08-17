@@ -28,7 +28,7 @@ class PictureChange extends React.Component {
 
 	render() {
 		return (
-		<div onMouseEnter={(e)=> this.handleEnter(e)} onMouseLeave={(e)=> this.handleLeave(e)}>
+		<div style={{cursor: 'pointer'}} onPointerEnter={(e)=> this.handleEnter(e)} onTouchStart={(e)=> this.handleEnter(e)} onTouchEnd={(e)=> this.handleLeave(e)} onMouseLeave={(e)=> this.handleLeave(e)} >
 			{this.state.firstPicture ? 
 				<CircleAvatar src={this.props.nPicture} alt="avatar"/> :
 				<CircleAvatar src={this.props.fPicture} alt="avatar"/>
