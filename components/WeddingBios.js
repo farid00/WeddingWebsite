@@ -5,7 +5,7 @@ var WeddingBios = {
 			name: 'Jared Lipshutz',
 			nickname: 'The Good Cop',
 			blurb: 'Matt’s Cousin. The Murtaugh to Juliette’s Riggs, can often be found shooting donuts out of other officers hands',
-			nPicture: '/public/images/nalec.png',
+			nPicture: '/public/images/njared.png',
 			fPicture: '/public/images/jared.png'
 		},
 
@@ -14,7 +14,7 @@ var WeddingBios = {
 			nickname: '',
 			blurb: 'Matt’s Brother. The Brandman that got it. 3 weeks into Matt and Juliette’s relationship, Alec approached the happy couple with a drawing and game plan for their wedding. Thanks for having foresight! ',
 			nPicture: '/public/images/nalec.png',
-			fPicture: '/public/images/alec.png'
+			fPicture: '/public/images/nalec.png'
 		},
 
 		{
