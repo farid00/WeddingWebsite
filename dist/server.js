@@ -1073,8 +1073,12 @@ var PictureChange = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'div',
-				{ onMouseEnter: function onMouseEnter(e) {
+				{ style: { cursor: 'pointer' }, onPointerEnter: function onPointerEnter(e) {
 						return _this2.handleEnter(e);
+					}, onTouchStart: function onTouchStart(e) {
+						return _this2.handleEnter(e);
+					}, onTouchEnd: function onTouchEnd(e) {
+						return _this2.handleLeave(e);
 					}, onMouseLeave: function onMouseLeave(e) {
 						return _this2.handleLeave(e);
 					} },
@@ -1436,6 +1440,18 @@ var WeddingParty = function (_React$Component) {
 		key: 'componentDidMount',
 		value: function componentDidMount() {
 			_aos2.default.init();
+			{
+				_WeddingBios2.default.groomsmen.forEach(function (element) {
+					var img = new Image();
+					img.src = element.fPicture;
+				});
+			}
+			{
+				_WeddingBios2.default.bridesmaids.forEach(function (element) {
+					var img = new Image();
+					img.src = element.fPicture;
+				});
+			}
 		}
 	}, {
 		key: 'componentDidUpdate',
@@ -1790,7 +1806,7 @@ var _path2 = _interopRequireDefault(_path);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function renderFullPage(html, image, preloadedState, styleTags) {
-  return '\n    <!doctype html>\n    <html>\n      <head>\n          <title> Brandman Wedding </title>\n          ' + styleTags + '\n          <base href="/">\n          <meta name="viewport" content="width=device-width, initial-scale=1">\n          <meta name="apple-mobile-web-app-capable" content="yes" />\n          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">\n          <link rel="stylesheet"\n          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">\n          <link rel="shortcut icon" href="/public/images/favicon.ico" />\n          <link rel="stylesheet" type="text/css" href="/public/css/style.css">\n          <link rel="stylesheet" type="text/css" href="/public/css/aos.css">\n          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">\n          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" \n          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" \n          crossorigin="anonymous">\n          <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Homemade+Apple|Pompiere|Shadows+Into+Light" rel="stylesheet">\n          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Roboto:400,500,900" \n          rel="stylesheet">\n          \n      </head>\n      <body style="background-size:cover; background-color:#F9F8F6">\n        <div id="root">' + html + '</div>\n        <script>\n          // WARNING: See the following for security issues around embedding JSON in HTML:\n          // http://redux.js.org/recipes/ServerRendering.html#security-considerations\n          window.__PRELOADED_STATE__ = ' + JSON.stringify(preloadedState).replace(/</g, '\\u003c') + '\n        </script>\n        <script src="/public/client.js"></script>\n      </body>\n    </html>\n    ';
+  return '\n    <!doctype html>\n    <html>\n      <head>\n          <base href="/"><meta name="viewport" content="width=device-width">\n          <title> Brandman Wedding </title>\n          ' + styleTags + '\n\n          <link rel="stylesheet"\n          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">\n          <link rel="shortcut icon" href="/public/images/favicon.ico" />\n          <link rel="stylesheet" type="text/css" href="/public/css/style.css">\n          <link rel="stylesheet" type="text/css" href="/public/css/aos.css">\n          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">\n          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" \n          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" \n          crossorigin="anonymous">\n          <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Homemade+Apple|Pompiere|Shadows+Into+Light" rel="stylesheet">\n          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Roboto:400,500,900" \n          rel="stylesheet">\n          \n      </head>\n      <body style="background-size:cover; background-color:#F9F8F6">\n        <div id="root">' + html + '</div>\n        <script>\n          // WARNING: See the following for security issues around embedding JSON in HTML:\n          // http://redux.js.org/recipes/ServerRendering.html#security-considerations\n          window.__PRELOADED_STATE__ = ' + JSON.stringify(preloadedState).replace(/</g, '\\u003c') + '\n        </script>\n        <script src="/public/client.js"></script>\n      </body>\n    </html>\n    ';
 }
 // Express
 /*const app = express()
