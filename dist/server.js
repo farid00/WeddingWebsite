@@ -762,16 +762,6 @@ var MainEvent = function MainEvent() {
 		Wrapper,
 		null,
 		_react2.default.createElement(StyleWrap, { src: 'public/images/prom.jpeg' }),
-		_react2.default.createElement(
-			SP,
-			null,
-			' Thank you so much for joining us today... '
-		),
-		_react2.default.createElement(
-			ST,
-			null,
-			' Ceremony '
-		),
 		_react2.default.createElement('img', { src: 'public/images/wr.png' }),
 		_react2.default.createElement(
 			SP,

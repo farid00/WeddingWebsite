@@ -34,8 +34,6 @@ const StyleWrap = styled.img`
 const MainEvent = () => (
 	<Wrapper>
 		<StyleWrap src="public/images/prom.jpeg"/>
-		<SP> Thank you so much for joining us today... </SP>
-		<ST> Ceremony </ST>
 		<img src="public/images/wr.png"/>
 		<SP>November 9th, 2019</SP>
 		<SP>The Ashford Estate</SP>
