@@ -1,0 +1,164 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	height: 100%;
+}
+body {
+	line-height: 1;
+	height: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@media (max-width: 768px){
+	.navOpen {
+		display: flex !important;
+		height: 100% !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.slideInDown, .slideOutUp {
+		animation-name: none;
+	}
+	.slideOutUp{
+		animation-name: none;
+	}
+}
+@supports not (-webkit-overflow-scrolling: touch) {
+.parwrap {
+  perspective: 1px;
+  height: 85vh;
+  margin-bottom: -50vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transform-style: preserve-3d;
+}
+}
+
+.parsection {
+	position: relative;
+	height: 100vh;
+  will-change: transform;
+	transform-style: preserve-3d;
+	z-index: -1;
+}
+
+@supports not (-webkit-overflow-scrolling: touch) {
+  .parallax2 {
+    /* Display and position the pseudo-element */
+    display: flex;
+    will-change: transform;
+    justify-content: center;
+    transform: scale(2) translateZ(-1px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    /* Force the background image to fill the whole element. */
+    /* Keep the image from overlapping sibling elements. */ 
+    z-index: -1;
+    transform-style: preserve-3d;
+  }
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .parallax2 {
+    /* Display and position the pseudo-element */
+    display: flex;
+    will-change: transform;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    /* Force the background image to fill the whole element. */
+    /* Keep the image from overlapping sibling elements. */ 
+    z-index: -1;
+    transform-style: preserve-3d;
+  }
+}
+
+
+
+
+.static {
+  display: flex;
+  flex-flow: column;
+  will-change: transform;
+  justify-content: center;
+	height: 100vh;
+	background-color: #42c2f4;
+	z-index: 4;
+}
+.bg1 {
+	display: flex;
+	flex-flow: row nowrap;
+	z-index: -1; 
+}
+
+.bg2 {
+	z-index: -1;
+	margin-top: -110vh;
+}
+
+.static2 {
+	height: auto;
+	background-color: #42c2f4;
+	z-index: 4;
+
+}
+.static3 {
+	height: auto;
+	background-color: #42c2f4;
+	z-index: 4;
+
+}
