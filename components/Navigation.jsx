@@ -12,6 +12,7 @@ const NavbarStyled = styled.div`
   top: 0;
   width: 100%;
   height: 15vh;
+  min-height: 100px;
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
