@@ -837,7 +837,7 @@ var slideAnimation = (0, _styledComponents.keyframes)(['', ''], _reactAnimations
 var NavbarStyled = _styledComponents2.default.div.withConfig({
   displayName: 'Navigation__NavbarStyled',
   componentId: 'xyic54-0'
-})(['display:flex;position:sticky;z-index:100;top:0;width:100%;height:15vh;flex-flow:column;justify-content:space-around;align-items:center;border-bottom:1px solid black;background-color:#F9F8F6;']);
+})(['display:flex;position:sticky;z-index:100;top:0;width:100%;height:15vh;min-height:100px;flex-flow:column;justify-content:space-around;align-items:center;border-bottom:1px solid black;background-color:#F9F8F6;']);
 
 var NavbarWrapper = _styledComponents2.default.div.withConfig({
   displayName: 'Navigation__NavbarWrapper',
