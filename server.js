@@ -20,8 +20,11 @@ function renderFullPage(html, image, preloadedState, styleTags) {
           ${styleTags}
           <base href="/">
           <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
           <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+          <link rel="shortcut icon" href="/public/images/favicon.ico" />
           <link rel="stylesheet" type="text/css" href="/public/css/style.css">
           <link rel="stylesheet" type="text/css" href="/public/css/aos.css">
           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -40,7 +43,7 @@ function renderFullPage(html, image, preloadedState, styleTags) {
           // http://redux.js.org/recipes/ServerRendering.html#security-considerations
           window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}
         </script>
-        <script src="/public/client.js"></script>
+        <script src="/dist/client.js"></script>
       </body>
     </html>
     `

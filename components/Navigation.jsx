@@ -8,9 +8,10 @@ const slideAnimation = keyframes`${slideInDown}`;
 const NavbarStyled = styled.div`
   display: flex;
   position: sticky;
-  z-index: 2;
+  z-index: 100;
   top: 0;
   width: 100%;
+  height: 15vh;
   flex-flow: column;
   justify-content: space-around;
   align-items: center;

@@ -54,7 +54,7 @@ var WeddingBios = {
 			nickname: '',
 			blurb: 'Zach is Juliette’s cousin but more accurately Matt’s soulmate as the two have an ever increasing creepy list of things in common (board games, color blindness, rock climbing, Black wranglers, I could go on and on). Every time we all hangout Juliette becomes the third wheel',
 			nPicture: '/public/images/nzach.png',
-			fPicture: '/public/images/Zach.png'
+			fPicture: '/public/images/zach.png'
 		},
 
 		{
@@ -62,7 +62,7 @@ var WeddingBios = {
 			nickname: '',
 			blurb: 'Matt’s little, Juliette’s Bougie Bestie. Jon is there to educate matt when he thinks Hermes is just some Grecian god in winged high tops',
 			nPicture: '/public/images/njon.png',
-			fPicture: '/public/images/Jon.png'
+			fPicture: '/public/images/jon.png'
 		},
 		{
 			name: 'JJ Surkin',
@@ -78,8 +78,8 @@ var WeddingBios = {
 			name: 'Amanda Waltman',
 			nickname: '',
 			blurb: 'The rock, the Juliette wrangler, the Fixer. She was Juliette’s little in AEPHI, but somewhere along the way roles were reversed. This is who Cherie calls when the flowers come in ivory not white',
-			nPicture: '/public/images/nAmanda.png',
-			fPicture: '/public/images/Amanda.png'
+			nPicture: '/public/images/namanda.png',
+			fPicture: '/public/images/amanda.png'
 		},
 
 		{
@@ -96,21 +96,21 @@ var WeddingBios = {
 			nickname: '',
 			blurb: 'Kaite and Juliette have been friends since the fourth grade and both ended up in college in CT and jobs in NYC after. Our doorman thinks Kaite is our shared mistress',
 			nPicture: '/public/images/nkatie.png',
-			fPicture: '/public/images/Katie.png'
+			fPicture: '/public/images/katie.png'
 		},
 		{
 			name: 'Kim Daly',
 			nickname: '',
 			blurb: 'Kim is the wildest “nice girl” you will ever meet. Kim is the one we used to put in front of parents whenever we needed someone to seamlessly lie about our whereabouts the night before. ',
 			nPicture: '/public/images/nkim.png',
-			fPicture: '/public/images/Kim.png'
+			fPicture: '/public/images/kim.png'
 		},
 		{
 			name: 'Caroline Barberi',
 			nickname: '',
 			blurb: 'Caroline is the first one you call for 3 very specific things, 1. How does one play basketball or any sport, 2. what country music should I be listening to? 3. Will there be hard seltzers and tanning oil? Caroline has been rooting for Matt and Juliette since the moment she met him and we couldn’t be luckier!',
 			nPicture: '/public/images/ncaroline.png',
-			fPicture: '/public/images/Caroline.png'
+			fPicture: '/public/images/caroline.png'
 		},
 
 
@@ -119,28 +119,28 @@ var WeddingBios = {
 			nickname: '',
 			blurb: 'Madie and Juliette have been friends for as long as the  two can remember. Madie was the fairy godmother to Juliette’s Evil Stepmother. Memory highlights include a bender with whole wheat bread, sloth running together at field hockey practice, and countless watches of She’s the Man',
 			nPicture: '/public/images/nmadie.png',
-			fPicture: '/public/images/Madie.png'
+			fPicture: '/public/images/madie.png'
 		},
 		{
 			name: 'Jill Berlant',
 			nickname: '',
 			blurb: 'Jill and Juliette were destined to be friends, they jus didn’t know it. Born 2 days apart the blondes both attended high schools near each other, with Jill in Matt’s classes, and colleges near each other. The summer before Senior year the 2 saw each other in random locations all across NYC and NJ. Fate pushed the two girls together and they have been inseparable ever since.',
-			nPicture: '/public/images/nJill.png',
-			fPicture: '/public/images/Jill.png'
+			nPicture: '/public/images/njill.png',
+			fPicture: '/public/images/jill.png'
 		},
 		{
 			name: 'Chloe Vincente',
 			nickname: '',
 			blurb: 'Chloe is famous. She is a news anchor who has been planning Juliette’s wedding and engagement against her will. Chloe and Juliette were in the same pledge class but through Chloe’s kind heart and good naturedness and Juliette’s lack of friend making skills the two became best friends in college. Matt and Juliette fought over who got her to stand on which side at the wedding. ',
-			nPicture: '/public/images/nChloe.png',
-			fPicture: '/public/images/Chloe.png'
+			nPicture: '/public/images/nchloe.png',
+			fPicture: '/public/images/chloe.png'
 		},
 		{
 			name: 'Kyra Brandman',
 			nickname: '',
 			blurb: 'Matt’s Sister. Kyra has more talent in her left eyebrow than Matt and I have in our entire bodies combined. When she is not gallivanting across earth or teaching the Jeep Wave to the West coast you can usually find her enjoying Turf&Surf. The actual favorite child',
-			nPicture: '/public/images/nKyra.png',
-			fPicture: '/public/images/Kyra.png'
+			nPicture: '/public/images/nkyra.png',
+			fPicture: '/public/images/kyra.png'
 		},
 	]
 }

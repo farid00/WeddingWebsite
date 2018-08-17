@@ -66,7 +66,6 @@ const AshfordTag = styled.p`
 `
 
 const StyledSection = styled.div`
-	margin-top: 25px;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
@@ -96,7 +95,7 @@ const SectionContent = styled.p`
 const Home = () => (
 <div className="parwrap">
 	<div className="parsection">
-			<div className ="parallax bg1">
+			<div className ="parallax2 bg1">
 				<HomePicture src="/public/images/home1.jpg"/>
 				<HomePicture2 src="/public/images/home2.jpg"/>
 			</div>
@@ -189,8 +188,6 @@ With the crisis averted Matt met Juliette in the lobby right after getting off t
 Dianna captured beautiful in the moment photos and the two kept it a secret all through dinner. They called their parents in a cab to Del Friscos where they shared VIPs and mashed potatoes as they called all their friends and family.
 			</SectionContent>
 		</StyledSection>
-	</div>
-	<div style={{height: '15vh', backgroundColor: '#42c2f4'}}>
 	</div>
 
 
