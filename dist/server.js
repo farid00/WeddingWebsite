@@ -1251,7 +1251,7 @@ var WeddingBios = {
 	groomsmen: [{
 		name: 'Jared Lipshutz',
 		nickname: 'The Good Cop',
-		blurb: 'Matt’s Cousin. The Murtaugh to Juliette’s Riggs, can often be found ',
+		blurb: 'Matt’s Cousin. The Murtaugh to Juliette’s Riggs, can often be found helping Matt find his way home after he has gotten himself hopelessly lost.',
 		nPicture: '/public/images/njared.png',
 		fPicture: '/public/images/jared.png'
 	}, {
