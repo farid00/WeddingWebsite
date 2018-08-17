@@ -522,7 +522,7 @@ var AshfordTag = _styledComponents2.default.p.withConfig({
 var StyledSection = _styledComponents2.default.div.withConfig({
 	displayName: 'Home__StyledSection',
 	componentId: 's1ofh9nm-9'
-})(['margin-top:25px;display:flex;flex-flow:column;justify-content:center;align-items:center;font-size:46px;font-family:\'Pompiere\',cursive;']);
+})(['display:flex;flex-flow:column;justify-content:center;align-items:center;font-size:46px;font-family:\'Pompiere\',cursive;']);
 
 var SectionTitle = _styledComponents2.default.p.withConfig({
 	displayName: 'Home__SectionTitle',
@@ -543,7 +543,7 @@ var Home = function Home() {
 			{ className: 'parsection' },
 			_react2.default.createElement(
 				'div',
-				{ className: 'parallax bg1' },
+				{ className: 'parallax2 bg1' },
 				_react2.default.createElement(HomePicture, { src: '/public/images/home1.jpg' }),
 				_react2.default.createElement(HomePicture2, { src: '/public/images/home2.jpg' })
 			)
@@ -706,8 +706,7 @@ var Home = function Home() {
 					'Dianna captured beautiful in the moment photos and the two kept it a secret all through dinner. They called their parents in a cab to Del Friscos where they shared VIPs and mashed potatoes as they called all their friends and family.'
 				)
 			)
-		),
-		_react2.default.createElement('div', { style: { height: '15vh', backgroundColor: '#42c2f4' } })
+		)
 	);
 };
 
@@ -838,7 +837,7 @@ var slideAnimation = (0, _styledComponents.keyframes)(['', ''], _reactAnimations
 var NavbarStyled = _styledComponents2.default.div.withConfig({
   displayName: 'Navigation__NavbarStyled',
   componentId: 'xyic54-0'
-})(['display:flex;position:sticky;z-index:2;top:0;width:100%;flex-flow:column;justify-content:space-around;align-items:center;border-bottom:1px solid black;background-color:#F9F8F6;']);
+})(['display:flex;position:sticky;z-index:100;top:0;width:100%;height:15vh;flex-flow:column;justify-content:space-around;align-items:center;border-bottom:1px solid black;background-color:#F9F8F6;']);
 
 var NavbarWrapper = _styledComponents2.default.div.withConfig({
   displayName: 'Navigation__NavbarWrapper',
@@ -1278,13 +1277,13 @@ var WeddingBios = {
 		nickname: '',
 		blurb: 'Zach is Juliette’s cousin but more accurately Matt’s soulmate as the two have an ever increasing creepy list of things in common (board games, color blindness, rock climbing, Black wranglers, I could go on and on). Every time we all hangout Juliette becomes the third wheel',
 		nPicture: '/public/images/nzach.png',
-		fPicture: '/public/images/Zach.png'
+		fPicture: '/public/images/zach.png'
 	}, {
 		name: 'Jon Leeds',
 		nickname: '',
 		blurb: 'Matt’s little, Juliette’s Bougie Bestie. Jon is there to educate matt when he thinks Hermes is just some Grecian god in winged high tops',
 		nPicture: '/public/images/njon.png',
-		fPicture: '/public/images/Jon.png'
+		fPicture: '/public/images/jon.png'
 	}, {
 		name: 'JJ Surkin',
 		nickname: 'Abrams',
@@ -1296,8 +1295,8 @@ var WeddingBios = {
 		name: 'Amanda Waltman',
 		nickname: '',
 		blurb: 'The rock, the Juliette wrangler, the Fixer. She was Juliette’s little in AEPHI, but somewhere along the way roles were reversed. This is who Cherie calls when the flowers come in ivory not white',
-		nPicture: '/public/images/nAmanda.png',
-		fPicture: '/public/images/Amanda.png'
+		nPicture: '/public/images/namanda.png',
+		fPicture: '/public/images/amanda.png'
 	}, {
 		name: 'Victoria Trautman',
 		nickname: '',
@@ -1309,43 +1308,43 @@ var WeddingBios = {
 		nickname: '',
 		blurb: 'Kaite and Juliette have been friends since the fourth grade and both ended up in college in CT and jobs in NYC after. Our doorman thinks Kaite is our shared mistress',
 		nPicture: '/public/images/nkatie.png',
-		fPicture: '/public/images/Katie.png'
+		fPicture: '/public/images/katie.png'
 	}, {
 		name: 'Kim Daly',
 		nickname: '',
 		blurb: 'Kim is the wildest “nice girl” you will ever meet. Kim is the one we used to put in front of parents whenever we needed someone to seamlessly lie about our whereabouts the night before. ',
 		nPicture: '/public/images/nkim.png',
-		fPicture: '/public/images/Kim.png'
+		fPicture: '/public/images/kim.png'
 	}, {
 		name: 'Caroline Barberi',
 		nickname: '',
 		blurb: 'Caroline is the first one you call for 3 very specific things, 1. How does one play basketball or any sport, 2. what country music should I be listening to? 3. Will there be hard seltzers and tanning oil? Caroline has been rooting for Matt and Juliette since the moment she met him and we couldn’t be luckier!',
 		nPicture: '/public/images/ncaroline.png',
-		fPicture: '/public/images/Caroline.png'
+		fPicture: '/public/images/caroline.png'
 	}, {
 		name: 'Madie Wirth',
 		nickname: '',
 		blurb: 'Madie and Juliette have been friends for as long as the  two can remember. Madie was the fairy godmother to Juliette’s Evil Stepmother. Memory highlights include a bender with whole wheat bread, sloth running together at field hockey practice, and countless watches of She’s the Man',
 		nPicture: '/public/images/nmadie.png',
-		fPicture: '/public/images/Madie.png'
+		fPicture: '/public/images/madie.png'
 	}, {
 		name: 'Jill Berlant',
 		nickname: '',
 		blurb: 'Jill and Juliette were destined to be friends, they jus didn’t know it. Born 2 days apart the blondes both attended high schools near each other, with Jill in Matt’s classes, and colleges near each other. The summer before Senior year the 2 saw each other in random locations all across NYC and NJ. Fate pushed the two girls together and they have been inseparable ever since.',
-		nPicture: '/public/images/nJill.png',
-		fPicture: '/public/images/Jill.png'
+		nPicture: '/public/images/njill.png',
+		fPicture: '/public/images/jill.png'
 	}, {
 		name: 'Chloe Vincente',
 		nickname: '',
 		blurb: 'Chloe is famous. She is a news anchor who has been planning Juliette’s wedding and engagement against her will. Chloe and Juliette were in the same pledge class but through Chloe’s kind heart and good naturedness and Juliette’s lack of friend making skills the two became best friends in college. Matt and Juliette fought over who got her to stand on which side at the wedding. ',
-		nPicture: '/public/images/nChloe.png',
-		fPicture: '/public/images/Chloe.png'
+		nPicture: '/public/images/nchloe.png',
+		fPicture: '/public/images/chloe.png'
 	}, {
 		name: 'Kyra Brandman',
 		nickname: '',
 		blurb: 'Matt’s Sister. Kyra has more talent in her left eyebrow than Matt and I have in our entire bodies combined. When she is not gallivanting across earth or teaching the Jeep Wave to the West coast you can usually find her enjoying Turf&Surf. The actual favorite child',
-		nPicture: '/public/images/nKyra.png',
-		fPicture: '/public/images/Kyra.png'
+		nPicture: '/public/images/nkyra.png',
+		fPicture: '/public/images/kyra.png'
 	}]
 };
 
@@ -1791,7 +1790,7 @@ var _path2 = _interopRequireDefault(_path);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function renderFullPage(html, image, preloadedState, styleTags) {
-  return '\n    <!doctype html>\n    <html>\n      <head>\n          <title> Brandman Wedding </title>\n          ' + styleTags + '\n          <base href="/">\n          <meta name="viewport" content="width=device-width, initial-scale=1">\n          <link rel="stylesheet"\n          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">\n          <link rel="stylesheet" type="text/css" href="/public/css/style.css">\n          <link rel="stylesheet" type="text/css" href="/public/css/aos.css">\n          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">\n          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" \n          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" \n          crossorigin="anonymous">\n          <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Homemade+Apple|Pompiere|Shadows+Into+Light" rel="stylesheet">\n          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Roboto:400,500,900" \n          rel="stylesheet">\n          \n      </head>\n      <body style="background-size:cover; background-color:#F9F8F6">\n        <div id="root">' + html + '</div>\n        <script>\n          // WARNING: See the following for security issues around embedding JSON in HTML:\n          // http://redux.js.org/recipes/ServerRendering.html#security-considerations\n          window.__PRELOADED_STATE__ = ' + JSON.stringify(preloadedState).replace(/</g, '\\u003c') + '\n        </script>\n        <script src="/public/client.js"></script>\n      </body>\n    </html>\n    ';
+  return '\n    <!doctype html>\n    <html>\n      <head>\n          <title> Brandman Wedding </title>\n          ' + styleTags + '\n          <base href="/">\n          <meta name="viewport" content="width=device-width, initial-scale=1">\n          <meta name="apple-mobile-web-app-capable" content="yes" />\n          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">\n          <link rel="stylesheet"\n          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">\n          <link rel="shortcut icon" href="/public/images/favicon.ico" />\n          <link rel="stylesheet" type="text/css" href="/public/css/style.css">\n          <link rel="stylesheet" type="text/css" href="/public/css/aos.css">\n          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">\n          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" \n          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" \n          crossorigin="anonymous">\n          <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Homemade+Apple|Pompiere|Shadows+Into+Light" rel="stylesheet">\n          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Roboto:400,500,900" \n          rel="stylesheet">\n          \n      </head>\n      <body style="background-size:cover; background-color:#F9F8F6">\n        <div id="root">' + html + '</div>\n        <script>\n          // WARNING: See the following for security issues around embedding JSON in HTML:\n          // http://redux.js.org/recipes/ServerRendering.html#security-considerations\n          window.__PRELOADED_STATE__ = ' + JSON.stringify(preloadedState).replace(/</g, '\\u003c') + '\n        </script>\n        <script src="/public/client.js"></script>\n      </body>\n    </html>\n    ';
 }
 // Express
 /*const app = express()
