@@ -4,7 +4,7 @@ var WeddingBios = {
 		{
 			name: 'Jared Lipshutz',
 			nickname: 'The Good Cop',
-			blurb: 'Matt’s Cousin. The Murtaugh to Juliette’s Riggs, can often be found shooting donuts out of other officers hands',
+			blurb: 'Matt’s Cousin. The Murtaugh to Juliette’s Riggs, can often be found ',
 			nPicture: '/public/images/njared.png',
 			fPicture: '/public/images/jared.png'
 		},
@@ -75,19 +75,18 @@ var WeddingBios = {
 	bridesmaids: 
 	[
 		{
-			name: 'Amanda Waltman',
-			nickname: '',
-			blurb: 'The rock, the Juliette wrangler, the Fixer. She was Juliette’s little in AEPHI, but somewhere along the way roles were reversed. This is who Cherie calls when the flowers come in ivory not white',
-			nPicture: '/public/images/namanda.png',
-			fPicture: '/public/images/amanda.png'
-		},
-
-		{
 			name: 'Victoria Trautman',
 			nickname: '',
 			blurb: 'Juliette’s Sister. Enjoys eating crunchy gluten free food and is a master at self-tanning. Her eye for editing made this wedding appear normal',
 			nPicture: '/public/images/nvictoria.png',
 			fPicture: '/public/images/victoria.png'
+		},
+		{
+			name: 'Amanda Waltman',
+			nickname: '',
+			blurb: 'The rock, the Juliette wrangler, the Fixer. She was Juliette’s little in AEPHI, but somewhere along the way roles were reversed. This is who Cherie calls when the flowers come in ivory not white',
+			nPicture: '/public/images/namanda.png',
+			fPicture: '/public/images/amanda.png'
 		},
 
 
@@ -106,11 +105,11 @@ var WeddingBios = {
 			fPicture: '/public/images/kim.png'
 		},
 		{
-			name: 'Caroline Barberi',
+			name: 'Kyra Brandman',
 			nickname: '',
-			blurb: 'Caroline is the first one you call for 3 very specific things, 1. How does one play basketball or any sport, 2. what country music should I be listening to? 3. Will there be hard seltzers and tanning oil? Caroline has been rooting for Matt and Juliette since the moment she met him and we couldn’t be luckier!',
-			nPicture: '/public/images/ncaroline.png',
-			fPicture: '/public/images/caroline.png'
+			blurb: 'Matt’s Sister. Kyra has more talent in her left eyebrow than Matt and I have in our entire bodies combined. When she is not gallivanting across earth or teaching the Jeep Wave to the West coast you can usually find her enjoying Turf&Surf. The actual favorite child',
+			nPicture: '/public/images/nkyra.png',
+			fPicture: '/public/images/kyra.png'
 		},
 
 
@@ -136,12 +135,13 @@ var WeddingBios = {
 			fPicture: '/public/images/chloe.png'
 		},
 		{
-			name: 'Kyra Brandman',
+			name: 'Caroline Barberi',
 			nickname: '',
-			blurb: 'Matt’s Sister. Kyra has more talent in her left eyebrow than Matt and I have in our entire bodies combined. When she is not gallivanting across earth or teaching the Jeep Wave to the West coast you can usually find her enjoying Turf&Surf. The actual favorite child',
-			nPicture: '/public/images/nkyra.png',
-			fPicture: '/public/images/kyra.png'
+			blurb: 'Caroline is the first one you call for 3 very specific things, 1. How does one play basketball or any sport, 2. what country music should I be listening to? 3. Will there be hard seltzers and tanning oil? Caroline has been rooting for Matt and Juliette since the moment she met him and we couldn’t be luckier!',
+			nPicture: '/public/images/ncaroline.png',
+			fPicture: '/public/images/caroline.png'
 		},
+
 	]
 }
 

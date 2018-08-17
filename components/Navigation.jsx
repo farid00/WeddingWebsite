@@ -11,13 +11,18 @@ const NavbarStyled = styled.div`
   z-index: 100;
   top: 0;
   width: 100%;
-  height: 15vh;
-  min-height: 100px;
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid black;
   background-color: #F9F8F6;
+  @media (max-width: 768px) {
+    height: auto;
+  }
+  @media (min-width: 768px) {
+    height: 15vh;
+    min-height: 100px;
+  }
 `;
 
 const NavbarWrapper = styled.div`

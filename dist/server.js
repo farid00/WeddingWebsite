@@ -752,16 +752,16 @@ var SP = _styledComponents2.default.p.withConfig({
 	componentId: 's17u0hou-2'
 })(['text-align:center;max-width:450px;margin:auto;']);
 
-var SectionWrapper = _styledComponents2.default.div.withConfig({
-	displayName: 'MainEvent__SectionWrapper',
+var StyleWrap = _styledComponents2.default.img.withConfig({
+	displayName: 'MainEvent__StyleWrap',
 	componentId: 's17u0hou-3'
-})(['']);
+})(['width:300px;margin:10px;}']);
 
 var MainEvent = function MainEvent() {
 	return _react2.default.createElement(
 		Wrapper,
 		null,
-		_react2.default.createElement('img', { src: 'public/images/icecream.png' }),
+		_react2.default.createElement(StyleWrap, { src: 'public/images/prom.jpeg' }),
 		_react2.default.createElement(
 			SP,
 			null,
@@ -776,18 +776,17 @@ var MainEvent = function MainEvent() {
 		_react2.default.createElement(
 			SP,
 			null,
-			' The ceremony will be taking place in the carriage house at the Ashoford estate at 6:30PM please try to arrive 1 hour early.'
+			'November 9th, 2019'
 		),
-		_react2.default.createElement(
-			ST,
-			null,
-			' Reception '
-		),
-		_react2.default.createElement('img', { src: 'public/images/champagne.png' }),
 		_react2.default.createElement(
 			SP,
 			null,
-			' The reception will take place following the ceremony around 7:30PM, there will be champage toast followed by a cocktail hour, followed by 3 course entree in the grand ballroom.'
+			'The Ashford Estate'
+		),
+		_react2.default.createElement(
+			SP,
+			null,
+			'Details to follow'
 		)
 	);
 };
@@ -837,7 +836,7 @@ var slideAnimation = (0, _styledComponents.keyframes)(['', ''], _reactAnimations
 var NavbarStyled = _styledComponents2.default.div.withConfig({
   displayName: 'Navigation__NavbarStyled',
   componentId: 'xyic54-0'
-})(['display:flex;position:sticky;z-index:100;top:0;width:100%;height:15vh;min-height:100px;flex-flow:column;justify-content:space-around;align-items:center;border-bottom:1px solid black;background-color:#F9F8F6;']);
+})(['display:flex;position:sticky;z-index:100;top:0;width:100%;flex-flow:column;justify-content:space-around;align-items:center;border-bottom:1px solid black;background-color:#F9F8F6;@media (max-width:768px){height:auto;}@media (min-width:768px){height:15vh;min-height:100px;}']);
 
 var NavbarWrapper = _styledComponents2.default.div.withConfig({
   displayName: 'Navigation__NavbarWrapper',
@@ -1121,21 +1120,26 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Wrapper = _styledComponents2.default.div.withConfig({
 	displayName: 'Registry__Wrapper',
 	componentId: 'llkzbm-0'
-})(['display:flex;justify-content:center;align-items:center;flex-flow:column;width:100%;']);
+})(['display:flex;width:100%;flex-flow:column;justify-content:center;align-items:center;']);
 
 var Title = _styledComponents2.default.h1.withConfig({
 	displayName: 'Registry__Title',
 	componentId: 'llkzbm-1'
-})(['font-family:\'Pompiere\',cursive;font-size:30px;margin-top:25px;']);
+})(['font-family:\'Pompiere\',cursive;font-size:30px;margin-top:25px;margin-left:25px;margin-right:25px;text-align:center;']);
+
+var SubTitle = _styledComponents2.default.h1.withConfig({
+	displayName: 'Registry__SubTitle',
+	componentId: 'llkzbm-2'
+})(['font-family:\'Pompiere\',cursive;font-size:30px;margin-left:25px;margin-right:25px;text-align:center;']);
 
 var StyleWrap = _styledComponents2.default.img.withConfig({
 	displayName: 'Registry__StyleWrap',
-	componentId: 'llkzbm-2'
+	componentId: 'llkzbm-3'
 })(['width:300px;margin:10px;&:hover{opacity:0.5;}']);
 var WrapperLong = _styledComponents2.default.div.withConfig({
 	displayName: 'Registry__WrapperLong',
-	componentId: 'llkzbm-3'
-})(['display:flex;justify-content:center;align-items:center;width:100%;']);
+	componentId: 'llkzbm-4'
+})(['display:flex;flex-flow:column wrap;justify-content:center;align-items:center;width:100%;']);
 var Registry = function Registry() {
 	return _react2.default.createElement(
 		Wrapper,
@@ -1143,7 +1147,12 @@ var Registry = function Registry() {
 		_react2.default.createElement(
 			Title,
 			null,
-			'We are registered at Bloomingdales and Macy\'s (Click Image to View Registry)'
+			'We are registered at Bloomingdales and Macy\'s '
+		),
+		_react2.default.createElement(
+			SubTitle,
+			null,
+			'(Click Image to View Registry)'
 		),
 		_react2.default.createElement(
 			WrapperLong,
@@ -1242,7 +1251,7 @@ var WeddingBios = {
 	groomsmen: [{
 		name: 'Jared Lipshutz',
 		nickname: 'The Good Cop',
-		blurb: 'Matt’s Cousin. The Murtaugh to Juliette’s Riggs, can often be found shooting donuts out of other officers hands',
+		blurb: 'Matt’s Cousin. The Murtaugh to Juliette’s Riggs, can often be found ',
 		nPicture: '/public/images/njared.png',
 		fPicture: '/public/images/jared.png'
 	}, {
@@ -1296,17 +1305,17 @@ var WeddingBios = {
 		fPicture: '/public/images/jj.png'
 	}],
 	bridesmaids: [{
-		name: 'Amanda Waltman',
-		nickname: '',
-		blurb: 'The rock, the Juliette wrangler, the Fixer. She was Juliette’s little in AEPHI, but somewhere along the way roles were reversed. This is who Cherie calls when the flowers come in ivory not white',
-		nPicture: '/public/images/namanda.png',
-		fPicture: '/public/images/amanda.png'
-	}, {
 		name: 'Victoria Trautman',
 		nickname: '',
 		blurb: 'Juliette’s Sister. Enjoys eating crunchy gluten free food and is a master at self-tanning. Her eye for editing made this wedding appear normal',
 		nPicture: '/public/images/nvictoria.png',
 		fPicture: '/public/images/victoria.png'
+	}, {
+		name: 'Amanda Waltman',
+		nickname: '',
+		blurb: 'The rock, the Juliette wrangler, the Fixer. She was Juliette’s little in AEPHI, but somewhere along the way roles were reversed. This is who Cherie calls when the flowers come in ivory not white',
+		nPicture: '/public/images/namanda.png',
+		fPicture: '/public/images/amanda.png'
 	}, {
 		name: 'Katie Wirth',
 		nickname: '',
@@ -1320,11 +1329,11 @@ var WeddingBios = {
 		nPicture: '/public/images/nkim.png',
 		fPicture: '/public/images/kim.png'
 	}, {
-		name: 'Caroline Barberi',
+		name: 'Kyra Brandman',
 		nickname: '',
-		blurb: 'Caroline is the first one you call for 3 very specific things, 1. How does one play basketball or any sport, 2. what country music should I be listening to? 3. Will there be hard seltzers and tanning oil? Caroline has been rooting for Matt and Juliette since the moment she met him and we couldn’t be luckier!',
-		nPicture: '/public/images/ncaroline.png',
-		fPicture: '/public/images/caroline.png'
+		blurb: 'Matt’s Sister. Kyra has more talent in her left eyebrow than Matt and I have in our entire bodies combined. When she is not gallivanting across earth or teaching the Jeep Wave to the West coast you can usually find her enjoying Turf&Surf. The actual favorite child',
+		nPicture: '/public/images/nkyra.png',
+		fPicture: '/public/images/kyra.png'
 	}, {
 		name: 'Madie Wirth',
 		nickname: '',
@@ -1344,11 +1353,11 @@ var WeddingBios = {
 		nPicture: '/public/images/nchloe.png',
 		fPicture: '/public/images/chloe.png'
 	}, {
-		name: 'Kyra Brandman',
+		name: 'Caroline Barberi',
 		nickname: '',
-		blurb: 'Matt’s Sister. Kyra has more talent in her left eyebrow than Matt and I have in our entire bodies combined. When she is not gallivanting across earth or teaching the Jeep Wave to the West coast you can usually find her enjoying Turf&Surf. The actual favorite child',
-		nPicture: '/public/images/nkyra.png',
-		fPicture: '/public/images/kyra.png'
+		blurb: 'Caroline is the first one you call for 3 very specific things, 1. How does one play basketball or any sport, 2. what country music should I be listening to? 3. Will there be hard seltzers and tanning oil? Caroline has been rooting for Matt and Juliette since the moment she met him and we couldn’t be luckier!',
+		nPicture: '/public/images/ncaroline.png',
+		fPicture: '/public/images/caroline.png'
 	}]
 };
 
@@ -1806,7 +1815,7 @@ var _path2 = _interopRequireDefault(_path);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function renderFullPage(html, image, preloadedState, styleTags) {
-  return '\n    <!doctype html>\n    <html>\n      <head>\n          <base href="/"><meta name="viewport" content="width=device-width">\n          <title> Brandman Wedding </title>\n          ' + styleTags + '\n\n          <link rel="stylesheet"\n          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">\n          <link rel="shortcut icon" href="/public/images/favicon.ico" />\n          <link rel="stylesheet" type="text/css" href="/public/css/style.css">\n          <link rel="stylesheet" type="text/css" href="/public/css/aos.css">\n          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">\n          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" \n          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" \n          crossorigin="anonymous">\n          <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Homemade+Apple|Pompiere|Shadows+Into+Light" rel="stylesheet">\n          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Roboto:400,500,900" \n          rel="stylesheet">\n          \n      </head>\n      <body style="background-size:cover; background-color:#F9F8F6">\n        <div id="root">' + html + '</div>\n        <script>\n          // WARNING: See the following for security issues around embedding JSON in HTML:\n          // http://redux.js.org/recipes/ServerRendering.html#security-considerations\n          window.__PRELOADED_STATE__ = ' + JSON.stringify(preloadedState).replace(/</g, '\\u003c') + '\n        </script>\n        <script src="/public/client.js"></script>\n      </body>\n    </html>\n    ';
+  return '\n    <!doctype html>\n    <html>\n      <head>\n          <base href="/"><meta name="viewport" content="width=device-width">\n          <title> Brandman Wedding </title>\n          ' + styleTags + '\n\n          <link rel="stylesheet"\n          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">\n          <link rel="shortcut icon" href="/public/images/favicon.ico" />\n          <link rel="stylesheet" type="text/css" href="/public/css/style.css">\n          <link rel="stylesheet" type="text/css" href="/public/css/aos.css">\n          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">\n          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" \n          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" \n          crossorigin="anonymous">\n          <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Homemade+Apple|Pompiere|Shadows+Into+Light" rel="stylesheet">\n          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Roboto:400,500,900" \n          rel="stylesheet">\n          \n      </head>\n      <body style="background-size:cover; background-color:#F9F8F6">\n        <div id="root">' + html + '</div>\n        <script>\n          // WARNING: See the following for security issues around embedding JSON in HTML:\n          // http://redux.js.org/recipes/ServerRendering.html#security-considerations\n          window.__PRELOADED_STATE__ = ' + JSON.stringify(preloadedState).replace(/</g, '\\u003c') + '\n        </script>\n        <script src="/dist/client.js"></script>\n      </body>\n    </html>\n    ';
 }
 // Express
 /*const app = express()

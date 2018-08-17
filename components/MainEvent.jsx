@@ -24,23 +24,22 @@ const SP = styled.p`
 	margin: auto;
 `
 
-const SectionWrapper = styled.div`
-`
+const StyleWrap = styled.img`
+	width: 300px;
+	margin: 10px;
+ }	
+ `
 
 
 const MainEvent = () => (
 	<Wrapper>
-		<img src="public/images/icecream.png"/>
+		<StyleWrap src="public/images/prom.jpeg"/>
 		<SP> Thank you so much for joining us today... </SP>
 		<ST> Ceremony </ST>
 		<img src="public/images/wr.png"/>
-		<SP> The ceremony will be taking place in the carriage house at the Ashoford estate at 
-		6:30PM please try to arrive 1 hour early.</SP>
-		<ST> Reception </ST>
-		<img src="public/images/champagne.png"/>
-		<SP> The reception will take place following the ceremony around 7:30PM, there will be
-		champage toast followed by a cocktail hour, followed by 3 course entree in the grand ballroom.
-		</SP>
+		<SP>November 9th, 2019</SP>
+		<SP>The Ashford Estate</SP>
+		<SP>Details to follow</SP>
 	</Wrapper>
 )
 
