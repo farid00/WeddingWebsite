@@ -16,7 +16,7 @@ const Title = styled.p`
 const HomePicture = styled.img`
     display: flex;
     width: 50vw;
-    @media (max-width: 768px) {
+    @media (max-width: 450px) {
     	width: 100vw
     }
 `;
@@ -24,7 +24,7 @@ const HomePicture = styled.img`
 const HomePicture2 = styled.img`
     display: flex;
     width: 50vw;
-    @media (max-width: 768px) {	
+    @media (max-width: 450px) {	
     	display:none
     }
 `;

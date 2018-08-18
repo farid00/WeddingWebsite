@@ -487,12 +487,12 @@ var Title = _styledComponents2.default.p.withConfig({
 var HomePicture = _styledComponents2.default.img.withConfig({
 	displayName: 'Home__HomePicture',
 	componentId: 's1ofh9nm-2'
-})(['display:flex;width:50vw;@media (max-width:768px){width:100vw}']);
+})(['display:flex;width:50vw;@media (max-width:450px){width:100vw}']);
 
 var HomePicture2 = _styledComponents2.default.img.withConfig({
 	displayName: 'Home__HomePicture2',
 	componentId: 's1ofh9nm-3'
-})(['display:flex;width:50vw;@media (max-width:768px){display:none}']);
+})(['display:flex;width:50vw;@media (max-width:450px){display:none}']);
 
 var OurNames = _styledComponents2.default.div.withConfig({
 	displayName: 'Home__OurNames',
