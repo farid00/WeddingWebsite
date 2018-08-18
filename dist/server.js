@@ -659,11 +659,6 @@ var Home = function Home() {
 					' The Proposal '
 				),
 				_react2.default.createElement(
-					SectionTitle,
-					null,
-					' So This One Time at Hebrew School...'
-				),
-				_react2.default.createElement(
 					SectionContent,
 					null,
 					'Matt knew Juliette was the one by the time they were 16 years old. Sitting in his basement talking about their dreams laying on a blue punching bag, Juliette asked him if he saw more of a future than next week. Matt smiled and knew he did, and since that day Matt has always known that Juliette would be his wife.',
@@ -693,14 +688,14 @@ var Home = function Home() {
 					'He was able to escape work early and meet with the woman behind the Instagram feed for a consultation. \xA0After consulting friends (See: Amanda) and family he settled on a Radiant cut diamond set on a platinum ring with two accompanying baguette diamonds. \xA0However, it needed to be assembled offsite so it would have to be shipped to his house in New Jersey the following week. \xA0In the meantime Matt started to work on various proposal ideas and pitch them to his closest confidants.',
 					_react2.default.createElement('br', null),
 					_react2.default.createElement('br', null),
-					'Matt knew the week of Passover Juliette was getting ancy. She was dressing nicer for work and she would come home asking if they were going to dinner every night only to find Matt in his Pajamas. Matt\u2019s plans started to come together on\xA0March 28\xA0(Happy Birthday Amanda). That day the ring arrived at 6 Wolf Hill. \xA0He knew that both families would be home for Passover, and Matt knew Juliette was planning to leave the City on that\xA0Thursday\xA0in the early afternoon. Though he had not planned to propose that day and had no formal plans to, the universe clearly disagreed and offered an opportunity he could not pass up. \xA0First he told his boss at the time what was going on and got an enthusiastic greenlight to take off of work so he could meet his Mom in Secaucus and get the ring. \xA0He told Amanda his plan to do propose that week and had arranged for he to come surprise Juliette that\xA0Friday. Then he called up a photographer to capture the moment and pinged Juliette at work to meet him outside the PwC office for a date (not an uncommon request given that they both work at the same company).',
+					'Matt knew the week of Passover Juliette was getting ancy. She was dressing nicer for work and she would come home asking if they were going to dinner every night only to find Matt in his Pajamas. Matt\u2019s plans started to come together on\xA0March 28\xA0(Happy Birthday Amanda). That day the ring arrived at 6 Wolf Hill. \xA0He knew that both families would be home for Passover, and Matt knew Juliette was planning to leave the City on that\xA0Thursday\xA0in the early afternoon. Though he had not planned to propose that day and had no formal plans to, the universe clearly disagreed and offered an opportunity he could not pass up. \xA0First he told his boss at the time what was going on and got an enthusiastic greenlight to take off of work so he could meet his Mom in Secaucus and get the ring. \xA0He told Amanda his plan to propose that week and had arranged for her to come surprise Juliette that\xA0Friday. Then he called up a photographer to capture the moment and pinged Juliette at work to meet him outside the PwC office for a date (not an uncommon request given that they both work at the same company).',
 					_react2.default.createElement('br', null),
 					'\xA0',
 					_react2.default.createElement('br', null),
 					'Just when everything seemed to be going well and he was about to meet Juliette in the lobby, the photographer called and canceled, with only about an hours\u2019 notice. \xA0In a slight (see: major) panic, Matt called the one person who always knows what to in a crisis, his Dad\u2019s longtime assistant, Dianna. And in an act of unbelievable selflessness she agreed to be the photographer. \xA0',
 					_react2.default.createElement('br', null),
 					_react2.default.createElement('br', null),
-					'With the crisis averted Matt met Juliette in the lobby right after getting off the phone with Dianna, and requested she put in her headphones and close her eyes while he got a cab to their date location. \xA0While this no doubt caught her by surprise she agreed and played along. \xA0He directed the cab to take them to the Museum of Natural History. It was closed, but that didn\u2019t matter to either of them. They had been on many dates there especially when they first started dating. Upon arrival Matt had her take off her headphones and open her eyes. \xA0He walked her up the steps and told her how the Museum has always been there with them through every up and down in their relationship and much like the Museum is a fixture in their lives he wanted to make sure she would be one in his. \xA0He got down on one knee and asked for her hand in marriage, there was a brief shocked pause as tears started to stream down her face, and after what seemed to be an eternity for him (but was most likely less than a few seconds) she said yes and kissed him!',
+					'With the crisis averted Matt met Juliette in the lobby right after getting off the phone with Dianna, and requested she put in her headphones and close her eyes while he got a cab to their date location. \xA0While this no doubt caught her by surprise she agreed and played along. \xA0He directed the cab to take them to the Museum of Natural History. It was closed, but that didn\u2019t matter to either of them. They had been on many dates there especially when they first started dating. Upon arrival Matt had her take off her headphones and open her eyes. \xA0He walked her up the steps and told her how the Museum has always been there with them through every up and down in their relationship, and much like the Museum is a fixture in their lives, he wanted to make sure she would be one in his. \xA0He got down on one knee and asked for her hand in marriage, there was a brief shocked pause as tears started to stream down her face, and after what seemed to be an eternity for him (but was most likely less than a few seconds) she said yes and kissed him!',
 					_react2.default.createElement('br', null),
 					_react2.default.createElement('br', null),
 					'Dianna captured beautiful in the moment photos and the two kept it a secret all through dinner. They called their parents in a cab to Del Friscos where they shared VIPs and mashed potatoes as they called all their friends and family.'
@@ -1150,7 +1145,7 @@ var Registry = function Registry() {
 			_react2.default.createElement(
 				'a',
 				{ href: 'https://www.bloomingdales.com/registry/wedding/guest/?registryId=2387933' },
-				_react2.default.createElement(StyleWrap, { src: '/public/images/Bloomingdales.svg' })
+				_react2.default.createElement(StyleWrap, { src: '/public/images/bloomingdales.svg' })
 			),
 			_react2.default.createElement(
 				'a',
@@ -1333,7 +1328,7 @@ var WeddingBios = {
 	}, {
 		name: 'Jill Berlant',
 		nickname: '',
-		blurb: 'Jill and Juliette were destined to be friends, they jus didn’t know it. Born 2 days apart the blondes both attended high schools near each other, with Jill in Matt’s classes, and colleges near each other. The summer before Senior year the 2 saw each other in random locations all across NYC and NJ. Fate pushed the two girls together and they have been inseparable ever since.',
+		blurb: 'Jill and Juliette were destined to be friends, they just didn’t know it. Born 2 days apart the blondes both attended high schools near each other, with Jill in Matt’s classes, and colleges near each other. The summer before Senior year the 2 saw each other in random locations all across NYC and NJ. Fate pushed the two girls together and they have been inseparable ever since.',
 		nPicture: '/public/images/njill.png',
 		fPicture: '/public/images/jill.png'
 	}, {

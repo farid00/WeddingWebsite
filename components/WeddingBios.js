@@ -123,7 +123,7 @@ var WeddingBios = {
 		{
 			name: 'Jill Berlant',
 			nickname: '',
-			blurb: 'Jill and Juliette were destined to be friends, they jus didn’t know it. Born 2 days apart the blondes both attended high schools near each other, with Jill in Matt’s classes, and colleges near each other. The summer before Senior year the 2 saw each other in random locations all across NYC and NJ. Fate pushed the two girls together and they have been inseparable ever since.',
+			blurb: 'Jill and Juliette were destined to be friends, they just didn’t know it. Born 2 days apart the blondes both attended high schools near each other, with Jill in Matt’s classes, and colleges near each other. The summer before Senior year the 2 saw each other in random locations all across NYC and NJ. Fate pushed the two girls together and they have been inseparable ever since.',
 			nPicture: '/public/images/njill.png',
 			fPicture: '/public/images/jill.png'
 		},

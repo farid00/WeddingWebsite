@@ -47,7 +47,7 @@ const Registry = () => (
 		<SubTitle>(Click Image to View Registry)</SubTitle>
 		<WrapperLong>
 			<a href="https://www.bloomingdales.com/registry/wedding/guest/?registryId=2387933">
-				<StyleWrap src="/public/images/Bloomingdales.svg"/>
+				<StyleWrap src="/public/images/bloomingdales.svg"/>
 			</a>
 			<a href="https://www.macys.com/wgl/registry/guest/2388310">
 				<StyleWrap src="/public/images/Macys.png"/>
