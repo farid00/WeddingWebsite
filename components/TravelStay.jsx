@@ -25,7 +25,8 @@ const StyledP = styled.p`
 
 const TravelStay = () => (
 	<Wrapper>
-			<Title> To Be Announced </Title>
+			<Title> The Hilton Garden Inn </Title>
+			<Title><a href="https://hiltongardeninn.hilton.com/en/gi/groups/personalized/T/TTNHLGI-TBWNOV-20191108/index.jhtml"> Click Here </a> to book your room! </Title>
 	</Wrapper>
 )
 

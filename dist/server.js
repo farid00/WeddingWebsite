@@ -1210,7 +1210,17 @@ var TravelStay = function TravelStay() {
 		_react2.default.createElement(
 			Title,
 			null,
-			' To Be Announced '
+			' The Hilton Garden Inn '
+		),
+		_react2.default.createElement(
+			Title,
+			null,
+			_react2.default.createElement(
+				'a',
+				{ href: 'https://hiltongardeninn.hilton.com/en/gi/groups/personalized/T/TTNHLGI-TBWNOV-20191108/index.jhtml' },
+				' Click Here '
+			),
+			' to book your room! '
 		)
 	);
 };
