@@ -44,7 +44,7 @@ const WrapperLong = styled.div`
 const Registry = () => (
 	<Wrapper>
 		<Title>We are registered at Bloomingdales and Macy's </Title>
-		<SubTitle>(Click Image to View Registry)</SubTitle>
+		<SubTitle>(Click Image to View Registry - Safari Works Best!)</SubTitle>
 		<WrapperLong>
 			<a href="https://www.bloomingdales.com/registry/wedding/guest/?registryId=2387933">
 				<StyleWrap src="/public/images/bloomingdales.svg"/>
