@@ -1137,7 +1137,7 @@ var Registry = function Registry() {
 		_react2.default.createElement(
 			SubTitle,
 			null,
-			'(Click Image to View Registry)'
+			'(Click Image to View Registry - Safari Works Best!)'
 		),
 		_react2.default.createElement(
 			WrapperLong,
